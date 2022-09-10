@@ -97,11 +97,20 @@
 	path = /obj/item/clothing/suit/taur/dress
 	sort_category = "Xenowear"
 
+<<<<<<< HEAD
 /datum/gear/suit/taur/colorable_skirt
 	display_name = "colorable skirt (Wolf/Horse-taur)"
 	path = /obj/item/clothing/suit/taur/skirt
 	sort_category = "Xenowear"
 
 /datum/gear/suit/taur/colorable_skirt/New()
+=======
+/datum/gear/uniform/taur/colorable_skirt
+	display_name = "colorable skirt (Wolf/Horse-taur)"
+	path = /obj/item/clothing/under/taur/skirt
+	sort_category = "Xenowear"
+
+/datum/gear/uniform/taur/colorable_skirt/New()
+>>>>>>> 149163479e (Merge pull request #13706 from Novacat/nova-basicfixes)
 	..()
 	gear_tweaks += gear_tweak_free_color_choice

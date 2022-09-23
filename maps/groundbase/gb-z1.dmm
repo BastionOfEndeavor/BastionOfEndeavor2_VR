@@ -5896,6 +5896,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/groundbase/security/lobby)
+<<<<<<< HEAD
+=======
+"mU" = (
+/obj/item/weapon/storage/box/nifsofts_mining,
+/obj/structure/table/reinforced,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/item/device/personal_shield_generator/belt/mining/loaded,
+/turf/simulated/floor/tiled,
+/area/groundbase/cargo/mining)
+>>>>>>> d8c5438db8 (Merge pull request #13789 from Very-Soft/mamer)
 "mV" = (
 /obj/machinery/vending/loadout/gadget,
 /turf/simulated/floor/tiled,
@@ -6002,6 +6014,21 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet/oracarpet,
 /area/groundbase/engineering/ce)
+<<<<<<< HEAD
+=======
+"nj" = (
+/obj/structure/table/rack{
+	dir = 8;
+	layer = 2.6
+	},
+/obj/item/weapon/tank/jetpack/carbondioxide,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/item/device/personal_shield_generator/security/loaded,
+/turf/simulated/floor/tiled/dark,
+/area/groundbase/security/equipment)
+>>>>>>> d8c5438db8 (Merge pull request #13789 from Very-Soft/mamer)
 "nk" = (
 /obj/effect/step_trigger/teleporter/to_mining{
 	pixel_y = -32
@@ -15896,6 +15923,7 @@
 	},
 /turf/simulated/floor/tiled,
 /area/groundbase/engineering/atmos)
+<<<<<<< HEAD
 "LE" = (
 /obj/item/weapon/storage/box/nifsofts_mining,
 /obj/structure/table/reinforced,
@@ -15904,6 +15932,8 @@
 	},
 /turf/simulated/floor/tiled,
 /area/groundbase/cargo/mining)
+=======
+>>>>>>> d8c5438db8 (Merge pull request #13789 from Very-Soft/mamer)
 "LG" = (
 /obj/machinery/computer/power_monitor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -21281,6 +21311,7 @@
 	outdoors = 0
 	},
 /area/maintenance/groundbase/level1/nwtunnel)
+<<<<<<< HEAD
 "Zb" = (
 /obj/structure/table/rack{
 	dir = 8;
@@ -21292,6 +21323,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/groundbase/security/equipment)
+=======
+>>>>>>> d8c5438db8 (Merge pull request #13789 from Very-Soft/mamer)
 "Zc" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -25008,7 +25041,11 @@ gQ
 hx
 eF
 UV
+<<<<<<< HEAD
 Zb
+=======
+nj
+>>>>>>> d8c5438db8 (Merge pull request #13789 from Very-Soft/mamer)
 hC
 nA
 CC
@@ -33160,7 +33197,11 @@ fo
 Qh
 sQ
 VI
+<<<<<<< HEAD
 LE
+=======
+mU
+>>>>>>> d8c5438db8 (Merge pull request #13789 from Very-Soft/mamer)
 xo
 Ny
 OB

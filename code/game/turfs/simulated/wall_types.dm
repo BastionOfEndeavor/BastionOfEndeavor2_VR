@@ -78,6 +78,21 @@
 /turf/simulated/wall/resin/Initialize(mapload)
 	. = ..(mapload, "resin",null,"resin")
 
+<<<<<<< HEAD
+=======
+/turf/simulated/wall/concrete
+	icon_state = "brick"
+
+/turf/simulated/wall/concrete/Initialize(mapload)
+	. = ..(mapload, "concrete") //3strong
+
+/turf/simulated/wall/r_concrete
+	icon_state = "rbrick"
+
+/turf/simulated/wall/r_concrete/Initialize(mapload)
+	. = ..(mapload, "concrete","plasteel rebar") //3strong
+
+>>>>>>> e06c37f15a (Merge pull request #13792 from Heroman3003/conk-rete-fix)
 // Kind of wondering if this is going to bite me in the butt.
 /turf/simulated/wall/skipjack/Initialize(mapload)
 	. = ..(mapload, "alienalloy")

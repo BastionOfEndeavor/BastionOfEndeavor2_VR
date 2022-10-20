@@ -19,14 +19,71 @@
 	case_blueprint_ru = list("сред#мыл;n1c")
 
 /obj/item/weapon/soap/nanotrasen
-	desc = "Кусок мыла бренда NanoTrasen. Пахнет фороном."
+	desc = "Кусок мыла бренда НаноТрейсен. Пахнет фороном - как оригинально."
 
 /obj/item/weapon/soap/deluxe/New()
-	desc = "Качественное мыло бренда Waffle Co. Пахнет [pick("лавандой", "ванилью", "клубникой", "шоколадом" ,"космосом")]."
+	desc = "Качественное мыло бренда Корпорации Уоффл. Пахнет [pick("лавандой", "ванилью", "клубникой", "шоколадом" ,"космосом")]."
 	..()
 
 /obj/item/weapon/soap/syndie
-	desc = "Подозрительное мыло. Источает запах страха."
+	desc = "Подозрительное мыло. Пахнет как страх."
+
+/obj/item/weapon/soap/space_soap
+	desc = "Пахнет горячим металлом и грецкими орехами."
+
+/obj/item/weapon/soap/water_soap
+	desc = "Пахнет хлоркой."
+
+/obj/item/weapon/soap/fire_soap
+	desc = "Пахнет костром."
+
+/obj/item/weapon/soap/rainbow_soap
+	desc = "Источает приторный запах."
+
+/obj/item/weapon/soap/diamond_soap
+	desc = "С ароматом шафрана и ванили."
+
+/obj/item/weapon/soap/uranium_soap
+	desc = "Пахнет не очень хорошо... но и не очень плохо."
+
+/obj/item/weapon/soap/silver_soap
+	desc = "С ароматом берёзы и амаранта."
+
+/obj/item/weapon/soap/brown_soap
+	desc = "С ароматом корицы и коньяка."
+
+/obj/item/weapon/soap/white_soap
+	desc = "С ароматом овса и мускатного ореха."
+
+/obj/item/weapon/soap/grey_soap
+	desc = "С ароматом бергамота и лилий."
+
+/obj/item/weapon/soap/pink_soap
+	desc = "С запахом жвачки."
+
+/obj/item/weapon/soap/purple_soap
+	desc = "С ароматом лаванды."
+
+/obj/item/weapon/soap/blue_soap
+	desc = "С ароматом кардамона."
+
+/obj/item/weapon/soap/cyan_soap
+	desc = "С ароматом колокольчика и персиков."
+
+/obj/item/weapon/soap/green_soap
+	desc = "Пахнет свежестриженным газоном."
+
+/obj/item/weapon/soap/yellow_soap
+	desc = "С ароматом цитрона и имбиря."
+
+/obj/item/weapon/soap/orange_soap
+	desc = "С ароматом апельсина и тёмного шоколада."
+
+/obj/item/weapon/soap/red_soap
+	desc = "С запахом вишни."
+
+/obj/item/weapon/soap/golden_soap
+	desc = "С запахом мёда."
 
 /obj/item/weapon/bikehorn
 	name = "Велосипедный клаксон"
@@ -143,7 +200,7 @@
 
 /obj/item/weapon/storage/part_replacer/adv/discount_bluespace
 	name = "Блюспейсовое Устройство Быстрой Замены Компонентов"
-	desc = "Особый механический модуль, предназначенный для хранения, сортировки и замены стандартных компонентов аппаратуры. Эта модель обладает гораздо большей вместительностью, а также возможностью работать с аппатурой при закрытой панели техобслуживания."
+	desc = "Особый механический модуль, предназначенный для хранения, сортировки и замены стандартных компонентов аппаратуры. Эта модель обладает гораздо большей вместительностью, а также возможностью работать с аппаратурой, не открывая при этом панель техобслуживания."
 	case_blueprint_ru = list("сред#Блюспейсов;adj1b/c' Устройств;n1a Быстрой Замены Компонентов")
 
 /obj/item/weapon/stock_parts

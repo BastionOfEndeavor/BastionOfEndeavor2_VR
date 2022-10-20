@@ -189,6 +189,7 @@
 		to_chat(src, "You cannot attack people before the game has started.")
 		*/
 		to_chat(src, "Вы не можете атаковать до начала игры.")
+		// End of Bastion of Endeavor Translation
 		return 0
 
 	if(stat)

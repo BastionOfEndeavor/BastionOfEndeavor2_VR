@@ -151,7 +151,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 				/* Bastion of Endeavor Translation
 				msg = "MC Notice: The [BadBoy.name] subsystem was the last to fire for 2 controller restarts. It will be recovered now and disabled if it happens again."
 				*/
-				msg = "Подсистема '[BadBoy.name]' последней сработала за два рестарта контроллера. Сейчас она будет восстановлена, если это случится ещё раз - отключена."
+				msg = "Подсистема '[BadBoy.name]' последней сработала за два рестарта контроллера. Сейчас она будет восстановлена, но если это случится ещё раз, она будет отключена.."
 				// End of Bastion of Endeavor Translation
 				FireHim = TRUE
 				BadBoy.fail()

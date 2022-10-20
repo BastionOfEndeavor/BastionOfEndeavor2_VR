@@ -205,11 +205,11 @@ SUBSYSTEM_DEF(game_master)
 		return
 
 	// Using lists for string tree conservation.
-	/* Bastion of Endeavor Unicode Edit
+	/* Bastion of Endeavor Translation
 	var/list/dat = list("<html><head><title>Automated Game Master Event System</title></head><body>")
 	*/
 	var/list/dat = list("<html><head><title>Система Гейм-Мастера эвентов</title></head><body>")
-	// End of Bastion of Endeavor Unicode Edit
+	// End of Bastion of Endeavor Translation
 
 	// Makes the system turn on or off.
 	/* Bastion of Endeavor Translation
@@ -271,7 +271,7 @@ SUBSYSTEM_DEF(game_master)
 	dat += "Скука: [staleness] "
 	dat += href(src, list("set_staleness" = 1), "\[Установить\]")
 	dat += "<br>"
-	dat += "<i>Показатель скуки отражает, настолько застоялым может быть раунд, и стоит ли проводить эвент. Она увеличивается со временем, особенно когда люди стоят в АФК. \
+	dat += "<i>Показатель скуки отражает, насколько застоялым может быть раунд, и стоит ли проводить эвент. Она увеличивается со временем, особенно когда люди стоят в АФК. \
 	Она уменьшается, когда происходят эвенты и другие 'интересные' вещи.</i><br>"
 	// End of Bastion of Endeavor Translation
 
@@ -287,7 +287,7 @@ SUBSYSTEM_DEF(game_master)
 	dat += href(src, list("set_danger" = 1), "\[Установить\]")
 	dat += "<br>"
 	dat += "<i>Опасность отражает, насколько раунд был до этого момента хаотичным. Она уменьшается со временем, и увеличивается, когда \
-	выбираются хаотичные эвенты или происходят хаотичные вещи. Чрезмерно высокое значение принудит систему избегать деструктивные эвенты, дабы слишком сильно не душить станцию.</i><br>"
+	выбираются хаотичные эвенты или происходят хаотичные вещи. Чрезмерно высокое значение принудит систему избегать деструктивных эвентов, дабы слишком сильно не душить станцию.</i><br>"
 	// End of Bastion of Endeavor Translation
 
 	/* Bastion of Endeavor Translation
@@ -429,8 +429,8 @@ SUBSYSTEM_DEF(game_master)
 	dat += "<th>Время до окончания</th>"
 	dat += "<th>Объявлен</th>"
 	dat += "<th>Начат</th>"
-	dat += "<th>Завершен</th>"
-	dat += "<th>Кнопки</th>"
+	dat += "<th>Завершён</th>"
+	dat += "<th>Кнопочки</th>"
 	// End of Bastion of Endeavor Translation
 	dat += "</tr>"
 

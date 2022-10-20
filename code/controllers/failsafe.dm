@@ -136,5 +136,5 @@ var/datum/controller/failsafe/Failsafe
 	/* Bastion of Endeavor Translation
 	stat("Failsafe Controller:", statclick.update("Defcon: [defcon_pretty()] (Interval: [Failsafe.processing_interval] | Iteration: [Failsafe.master_iteration])"))
 	*/
-	stat("Проверочный контроллер:", statclick.update("Defcon: [defcon_pretty()] ( : [Failsafe.processing_interval] | Iteration: [Failsafe.master_iteration])"))
+	stat("Проверочный контроллер:", statclick.update("Дефкон: [defcon_pretty()] (Интервал : [Failsafe.processing_interval] | Итерация: [Failsafe.master_iteration])"))
 	// End of Bastion of Endeavor Translation

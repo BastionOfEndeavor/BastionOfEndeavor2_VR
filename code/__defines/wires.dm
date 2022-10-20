@@ -252,5 +252,5 @@
 #define WIRE_RIG_AI_OVERRIDE "Управление ИИ"
 #define WIRE_RIG_SYSTEM_CONTROL "Управление системой"
 #define WIRE_RIG_INTERFACE_LOCK "Блокировка интерфейса"
-#define WIRE_RIG_INTERFACE_SHOCK "Шок"
+#define WIRE_RIG_INTERFACE_SHOCK "Удар током"
 // End of Bastion of Endeavor Translation

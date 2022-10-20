@@ -46,7 +46,7 @@
 	name = "Orbit"
 	desc = "Pick a mob to follow and orbit."
 	*/
-	name = "Преследовать"
+	name = "Следовать"
 	desc = "Выбрать моба и следовать за ним."
 	// End of Bastion of Endeavor Translation
 	icon_state = "orbit"

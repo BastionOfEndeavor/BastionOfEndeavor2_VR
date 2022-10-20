@@ -56,7 +56,7 @@ SUBSYSTEM_DEF(vote)
 		/* Bastion of Endeavor Translation
 		log_debug("The crew transfer shuttle was automatically called at vote time due to no players being present.")
 		*/
-		log_debug("Шаттл трансфера персонала был автоматически вызван во время голосания в связи с отсутствием игроков.")
+		log_debug("Шаттл трансфера персонала был автоматически вызван во время голосования в связи с отсутствием игроков.")
 		// End of Bastion of Endeavor Translation
 		init_shift_change(null, 1)
 		return
@@ -575,7 +575,11 @@ SUBSYSTEM_DEF(vote)
 			if(usr.client.holder)
 				config.allow_vote_mode = !config.allow_vote_mode
 
+		/* Bastion of Endeavor Edit: Adjusting these since the defines serve a different purpose
 		if(VOTE_RESTART)
+		*/
+		if("restart")
+		// End of Bastion of Endeavor Edit
 			if(config.allow_vote_restart || usr.client.holder)
 				var/admin_number_present = send2irc_adminless_only(usr.ckey, usr)
 				if(admin_number_present <= 0 || usr.client.holder)
@@ -591,16 +595,32 @@ SUBSYSTEM_DEF(vote)
 					*/
 					to_chat(usr, "<span class = 'warning'>Вы не можете начать голосование за перезапуск, когда на сервере присутствуют админы. Если у Вас возникла проблема в раунде, используйте Помощь админа.</span>")
 					// End of Bastion of Endeavor Translation
+		/* Bastion of Endeavor Edit
 		if(VOTE_GAMEMODE)
+		*/
+		if("gamemode")
+		// End of Bastion of Endeavor Edit
 			if(config.allow_vote_mode || usr.client.holder)
 				initiate_vote(VOTE_GAMEMODE, usr.key)
+		/* Bastion of Endeavor Edit
 		if(VOTE_CREW_TRANSFER)
+		*/
+		if("crew_transfer")
+		// End of Bastion of Endeavor Edit
 			if(config.allow_vote_restart || usr.client.holder)
 				initiate_vote(VOTE_CREW_TRANSFER, usr.key)
+		/* Bastion of Endeavor Edit: 
 		if(VOTE_ADD_ANTAGONIST)
+		*/
+		if("add_antagonist")
+		// End of Bastion of Endeavor Edit
 			if(config.allow_extra_antags || usr.client.holder)
 				initiate_vote(VOTE_ADD_ANTAGONIST, usr.key)
+		/* Bastion of Endeavor Translation
 		if(VOTE_CUSTOM)
+		*/
+		if("custom")
+		// End of Bastion of Endeavor Translation
 			if(usr.client.holder)
 				initiate_vote(VOTE_CUSTOM, usr.key)
 

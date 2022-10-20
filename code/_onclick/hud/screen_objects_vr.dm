@@ -110,7 +110,11 @@
 							to_chat(usr, "<span class='notice'>Вы постепенно успокаиваетесь, находясь в родных объятиях тьмы...</span>")
 							// End of Bastion of Endeavor Translation
 						else if(isbelly(H.loc)) // Safety message for if inside a belly.
+							/* Bastion of Endeavor Translation
 							to_chat(usr, "<span class='notice'>You are slowly calming down within the darkness of something's belly, listening to their body as it moves around you. ...safe...</span>")
+							*/
+							to_chat(usr, "<span class='notice'>Вы постепенно успокиваетесь, находясь в чужом животе, в безопасности...</span>")
+							// End of Bastion of Endeavor Translation
 
 						else
 							/* Bastion of Endeavor Translation
@@ -154,7 +158,6 @@
 			if(istype(H) && istype(H.species, /datum/species/xenochimera)) // If you're somehow able to click this while not a chimera, this should prevent weird runtimes. Will need changing if regeneration is ever opened to non-chimera using the same alert.
 				if(H.revive_ready == REVIVING_DONE) // Sanity check.
 					H.hatch() // Hatch.
-
 
 		else
 			return 0

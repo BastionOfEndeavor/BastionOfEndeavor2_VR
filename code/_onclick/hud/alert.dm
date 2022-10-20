@@ -352,7 +352,7 @@ The box in your backpack has an oxygen tank and gas mask in it."
 	/* Bastion of Endeavor Translation
 	desc = "The air around you is too cold for a humanoid. Be careful to avoid exposing them to this enviroment."
 	*/
-	desc = "Воздух вокруг Вас слишком горяч для гуманоидных рас. Старайтесь не допускать их контакта с этой средой."
+	desc = "Воздух вокруг Вас слишком холоден для гуманоидных рас. Старайтесь не допускать их контакта с этой средой."
 	// End of Bastion of Endeavor Translation
 
 /obj/screen/alert/lowpressure
@@ -413,7 +413,7 @@ or something covering your eyes."
 	desc = "You're weakened! This could be a temporary issue due to injury or the result of drugs or drinking."
 	*/
 	name = "Ослабление"
-	desc = "Вы ослаблены! Это временное состояние может быть вызвано как травмой, так и алкоголем или препаратами."
+	desc = "Вы ослаблены! Это временное состояние может быть вызвано травмой, алкоголем или препаратами."
 	// End of Bastion of Endeavor Translation
 	icon_state = "weaken"
 
@@ -423,7 +423,7 @@ or something covering your eyes."
 	desc = "You're confused, and may stumble into things! This may be from concussive effects, drugs, or dizzyness. Walking will help reduce incidents."
 	*/
 	name = "Запутанность"
-	desc = "Осторожно, Вы можете случайно во что-то врезаться! Это может быть вызвано сотрясением, препаратами или плохим физическим состоянием. Медленная ходьба поможет снизить риск."
+	desc = "Осторожно, Вы можете случайно во что-то врезаться! Это может быть вызвано травмой, препаратами или плохим физическим состоянием. Медленная ходьба поможет снизить риск."
 	// End of Bastion of Endeavor Translation
 	icon_state = "confused"
 
@@ -504,7 +504,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	desc = "There's flammable plasma in the air. If it lights up, you'll be toast."
 	*/
 	name = "Плазма"
-	desc = "В воздухе воспламеняемая плазма. Если она загорится, Вам не жить."
+	desc = "В воздухе легковоспламеняющаяся плазма. Если она загорится, Вам не жить."
 	// End of Bastion of Endeavor Translation
 	icon_state = "alien_tox"
 	alerttooltipstyle = "alien"
@@ -553,7 +553,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	desc = "Unit has no power cell. No modules available until a power cell is reinstalled. Robotics may provide assistance."
 	*/
 	name = "Нет батарейки"
-	desc = "Юнит не обладает батарейкой. Модули недоступны. Робототехник может оказать с этим помощь."
+	desc = "Юнит не обладает батарейкой. Модули недоступны. С этим может помочь робототехник."
 	// End of Bastion of Endeavor Translation
 	icon_state = "nocell"
 
@@ -564,7 +564,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 Recharging stations are available in robotics, the dormitory bathrooms, and the AI satellite."
 	*/
 	name = "Нет заряда"
-	desc = "Батарейка юнита полностью разряжена. Модули недоступны. Зарядные станции доступны в робототехнике, уборных при дормиториях и на спутнике ИИ."
+	desc = "Батарейка юнита полностью разряжена. Модули недоступны. Зарядные станции можно найти в робототехнике, уборных и на спутнике ИИ."
 	// End of Bastion of Endeavor Translation
 	icon_state = "emptycell"
 

@@ -944,7 +944,7 @@
 	/* Bastion of Endeavor Translation: Ehhh
 	name = "gps unit"
 	*/
-	name = "GPS"
+	name = "ГПС"
 	// End of Bastion of Endeavor Translation
 	icon = null
 	icon_state = ""

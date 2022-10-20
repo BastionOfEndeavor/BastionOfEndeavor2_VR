@@ -63,8 +63,8 @@
 #define MECH_ELECTRIC	"Firmware"
 */
 #define MECH_HULL		"Корпус"
-#define MECH_ACTUATOR	"Актуатор"
+#define MECH_ACTUATOR	"Привод"
 #define MECH_ARMOR		"Броня"
 #define MECH_GAS		"Система жизнеобеспечения"
-#define MECH_ELECTRIC	"Програмное обеспечение"
+#define MECH_ELECTRIC	"Программное обеспечение"
 // End of Bastion of Endeavor Translation

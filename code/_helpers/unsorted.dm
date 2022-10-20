@@ -1561,7 +1561,7 @@ var/mob/dview/dview_mob = new
 		/* Bastion of Endeavor Translation
 		value = tgui_input_text(usr, "Enter type to find (blank for all, cancel to cancel)", "Search for type")
 		*/
-		value = tgui_input_text("Введите искомый тип (или пропуск для вывода всех)", "Поиск типа")
+		value = tgui_input_text(usr, "Введите искомый тип (или пропуск для вывода всех)", "Поиск типа")
 		// End of Bastion of Endeavor Translation
 		if (isnull(value))
 			return

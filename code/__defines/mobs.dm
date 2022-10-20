@@ -139,7 +139,7 @@
 #define CLASS_LOWMID		"Underpaid"
 #define CLASS_LOWER			"Poor"
 */
-#define CLASS_UPPER 		"Богатство"
+#define CLASS_UPPER 		"Олигарх"
 #define CLASS_UPMID			"Высокий доход"
 #define CLASS_MIDDLE 		"Средний доход"
 #define CLASS_LOWMID		"Низкий доход"

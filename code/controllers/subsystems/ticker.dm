@@ -601,7 +601,7 @@ var/global/datum/controller/subsystem/ticker/ticker
 			/* Bastion of Endeavor Translation
 			to_world("<span class='filter_system'><b>[aiPlayer.name]'s laws when it was deactivated were:</b></span>") // VOREStation edit
 			*/
-			to_world("<span class='filter_system'><b>Законами [case_ru(aiPlayer, GCASE)] на момент деактивации были следующими:</b></span>") // VOREStation edit
+			to_world("<span class='filter_system'><b>Законы [case_ru(aiPlayer, GCASE)] на момент деактивации были следующими:</b></span>") // VOREStation edit
 			// End of Bastion of Endeavor Translation
 		aiPlayer.show_laws(1)
 

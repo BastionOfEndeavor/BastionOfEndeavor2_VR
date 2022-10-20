@@ -77,7 +77,7 @@
 	desc = "Speak into the NIF's Soulcatcher (circumventing AR speaking)"
 	*/
 	name = "Сказать в Ловце Душ"
-	desc = "Сказать вслух в Ловец Душ НИФа (вместо речи через проекцию)."
+	desc = "Сказать вслух в Ловце Душ НИФа (вместо речи через проекцию)."
 	// End of Bastion of Endeavor Translation
 	icon_state = "nsay"
 

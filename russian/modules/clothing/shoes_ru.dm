@@ -369,7 +369,7 @@
 	name = "Сандалии"
 	//case_blueprint_ru = 
 
-obj/item/clothing/shoes/sandal/clogs
+/obj/item/clothing/shoes/sandal/clogs
 	name = "Сабо"
 	desc = "Пара пластиковых Сабо."
 	//case_blueprint_ru = 

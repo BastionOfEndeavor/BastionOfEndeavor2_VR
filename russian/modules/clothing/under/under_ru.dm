@@ -585,7 +585,7 @@
 	desc = "Чёрное платье с ремешками в форме пентаграммы на груди."
 	//case_blueprint_ru = 
 
-obj/item/clothing/under/dress/yellowswoop
+/obj/item/clothing/under/dress/yellowswoop
 	name = "Жёлтое стянутое платье"
 	desc = "Жёлтое платье, стянутое вбок."
 	//case_blueprint_ru = 

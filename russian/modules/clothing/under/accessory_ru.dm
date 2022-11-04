@@ -186,7 +186,6 @@
 	desc = "Красивый браслет дружбы всех цветов радуги."
 	//case_blueprint_ru = 
 
-/* it's obsolete by now im pretty sure
 /obj/item/clothing/accessory/bracelet/material/wood
 	name = "Деревянный браслет"
 	desc = "Браслет из дерева."
@@ -231,7 +230,7 @@
 	name = "Стеклянный браслет"
 	desc = "Браслет из стекла."
 	//case_blueprint_ru = 
-*/
+
 /obj/item/clothing/accessory/halfcape
 	name = "Накидка"
 	desc = "Элегантный полуплащ, подходящий для европейских аристократов и главных героев ретро-аниме."
@@ -524,7 +523,7 @@
 	desc = "Нашивка, сообщающая о группе крови AB-."
 	//case_blueprint_ru = 
 
-obj/item/clothing/accessory/armor/helmcover
+/obj/item/clothing/accessory/armor/helmcover
 	name = "Шлемовое покрытие"
 	desc = "Тканевое покрытие для бронированных шлемов."
 	//case_blueprint_ru = 

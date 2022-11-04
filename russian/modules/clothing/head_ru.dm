@@ -187,7 +187,7 @@
 	//case_blueprint_ru = 
 
 // For the sake of getting this done faster, I'm skipping the ones that cannot be encountered in the game.
-obj/item/clothing/head/helmet/solgov
+/obj/item/clothing/head/helmet/solgov
 	name = "\improper Solar Confederate Government helmet"
 	desc = "A helmet painted in Peacekeeper blue. Stands out like a sore thumb."
 

@@ -810,12 +810,12 @@
 	desc = "Поношенная и весьма удобная футболка с изображением Иана. По ощущениям она очень похожа на объятия. В ней приятно спать."
 	//case_blueprint_ru = 
 
-obj/item/clothing/suit/kimono
+/obj/item/clothing/suit/kimono
 	name = "Кимоно"
 	desc = "Традиционное японское кимоно."
 	//case_blueprint_ru = 
 
-obj/item/clothing/suit/kamishimo
+/obj/item/clothing/suit/kamishimo
 	name = "Камисимо"
 	desc = "Традиционная мужская одежда из Японии."
 	//case_blueprint_ru = 

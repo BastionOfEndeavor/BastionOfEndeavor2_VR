@@ -141,7 +141,7 @@
 	name = "Вечерние перчатки"
 	//case_blueprint_ru = 
 
-obj/item/clothing/gloves/fingerless
+/obj/item/clothing/gloves/fingerless
 	desc = "Пара перчаток, совсем не защищающих пальцы."
 	name = "Беспалые перчатки"
 	//case_blueprint_ru = 

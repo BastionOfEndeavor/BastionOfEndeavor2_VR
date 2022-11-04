@@ -231,7 +231,7 @@
 /obj/item/clothing/glasses/thermal/plain/monocle
 	name = "Термоноколь"
 	desc = "Тепловой визор в виде монокля."
-	\\case_blueprint_ru = 
+	//case_blueprint_ru = 
 	body_parts_covered = 0
 
 /obj/item/clothing/glasses/thermal/plain/eyepatch

@@ -1,5 +1,4 @@
 // collectable.dm
-	ncase = 
 
 /obj/item/clothing/head/collectable
 	name = "Коллекционный головной убор"

@@ -259,9 +259,12 @@
 
 	/* Bastion of Endeavor Translation
 	var/list/output = list("\icon[src.examine_icon()][bicon(src)] That's [f_name] [suffix]", desc)
+<<<<<<< HEAD
 	*/
 	var/list/output = list("\icon[src.examine_icon()][bicon(src)] Это [f_name] [suffix]", desc)
 	// End of Bastion of Endeavor Translation
+=======
+>>>>>>> f8dddf7a50 (Merge pull request #14170 from VOREStation/revert-14040-upstream-merge-8808)
 
 	if(user.client?.prefs.examine_text_mode == EXAMINE_MODE_INCLUDE_USAGE)
 		output += description_info

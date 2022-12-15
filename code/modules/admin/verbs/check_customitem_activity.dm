@@ -19,7 +19,11 @@ var/inactive_keys = "None<br>"
 		dat += "<hr>"
 		dat += "This system was implemented on March 1 2013, and the database a few days before that. Root server access is required to add or disable access to specific custom items.<br>"
 	else
+<<<<<<< HEAD
 		dat += "<a href='?src=\ref[src];_src_=holder;populate_inactive_customitems=1'>Populate list (requires an active database connection)</a><br>"
+=======
+		dat += "<a href='?src=\ref[src];_src_=holder;[HrefToken()];populate_inactive_customitems=1'>Populate list (requires an active database connection)</a><br>"
+>>>>>>> fe91b1a43b (Merge pull request #14206 from ItsSelis/selis-href-adds)
 
 	usr << browse(dat, "window=inactive_customitems;size=600x480")
 

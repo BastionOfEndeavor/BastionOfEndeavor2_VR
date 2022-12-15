@@ -107,9 +107,15 @@ world/New()
 			output += "<b>Offense:</b>[N.body]<br>"
 			output += "<small>Occured at [time2text(N.date,"MM/DD hh:mm:ss")]</small><br>"
 			output += "<small>authored by <i>[N.author]</i></small><br>"
+<<<<<<< HEAD
 			output += " <a href='?src=\ref[report_topic_handler];client=\ref[src];action=remove;ID=[N.ID]'>Flag as Handled</a>"
 			if(src.key == N.author)
 				output += " <a href='?src=\ref[report_topic_handler];client=\ref[src];action=edit;ID=[N.ID]'>Edit</a>"
+=======
+			output += " <a href='?src=\ref[report_topic_handler];client=\ref[src];[HrefToken()];action=remove;ID=[N.ID]'>Flag as Handled</a>"
+			if(src.key == N.author)
+				output += " <a href='?src=\ref[report_topic_handler];client=\ref[src];[HrefToken()];action=edit;ID=[N.ID]'>Edit</a>"
+>>>>>>> fe91b1a43b (Merge pull request #14206 from ItsSelis/selis-href-adds)
 			output += "<br>"
 			output += "<br>"
 	else

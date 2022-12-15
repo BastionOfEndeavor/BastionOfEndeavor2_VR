@@ -18,7 +18,11 @@
 <body onload='selectTextField();updateSearch();'>
 <div id='main'><table id='searchable' cellspacing='0'>
 <tr class='title'>
+<<<<<<< HEAD
 <th style='width:125px;text-align:right;'>CKEY <a class='small' href='?src=\ref[src];editrights=add'>\[+\]</a></th>
+=======
+<th style='width:125px;text-align:right;'>CKEY <a class='small' href='?src=\ref[src];[HrefToken()];editrights=add'>\[+\]</a></th>
+>>>>>>> fe91b1a43b (Merge pull request #14206 from ItsSelis/selis-href-adds)
 <th style='width:125px;'>RANK</th><th style='width:100%;'>PERMISSIONS</th>
 </tr>
 "}
@@ -31,9 +35,15 @@
 		if(!rights)	rights = "*none*"
 
 		output += "<tr>"
+<<<<<<< HEAD
 		output += "<td style='text-align:right;'>[adm_ckey] <a class='small' href='?src=\ref[src];editrights=remove;ckey=[adm_ckey]'>\[-\]</a></td>"
 		output += "<td><a href='?src=\ref[src];editrights=rank;ckey=[adm_ckey]'>[rank]</a></td>"
 		output += "<td><a class='small' href='?src=\ref[src];editrights=permissions;ckey=[adm_ckey]'>[rights]</a></td>"
+=======
+		output += "<td style='text-align:right;'>[adm_ckey] <a class='small' href='?src=\ref[src];[HrefToken()];editrights=remove;ckey=[adm_ckey]'>\[-\]</a></td>"
+		output += "<td><a href='?src=\ref[src];[HrefToken()];editrights=rank;ckey=[adm_ckey]'>[rank]</a></td>"
+		output += "<td><a class='small' href='?src=\ref[src];[HrefToken()];editrights=permissions;ckey=[adm_ckey]'>[rights]</a></td>"
+>>>>>>> fe91b1a43b (Merge pull request #14206 from ItsSelis/selis-href-adds)
 		output += "</tr>"
 
 	output += {"

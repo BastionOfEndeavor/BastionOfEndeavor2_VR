@@ -9,8 +9,13 @@
 			)
 	cost = 45
 	containertype = /obj/structure/closet/crate/secure
+<<<<<<< HEAD
 	containername = "Exploration voidsuit crate"
 	access = access_explorer
+=======
+	containername = "Away Team voidsuit crate"
+	access = list(access_eva, access_explorer)
+>>>>>>> 7dec3dbaeb (Merge pull request #14234 from Novacat/nova-basicfixes)
 
 /datum/supply_pack/voidsuits/explorer_medic
 	name = "Expedition Medic voidsuits"
@@ -105,8 +110,13 @@
 	cost = 150
 	containertype = /obj/structure/closet/crate/secure
 	name = "Commonwealth exploration voidsuit crate"
+<<<<<<< HEAD
 	access = access_explorer
 	
+=======
+	access = list(access_eva, access_explorer)
+
+>>>>>>> 7dec3dbaeb (Merge pull request #14234 from Novacat/nova-basicfixes)
 /datum/supply_pack/voidsuits/com_engineer
 	name = "Commonwealth engineering voidsuit"
 	contains = list(

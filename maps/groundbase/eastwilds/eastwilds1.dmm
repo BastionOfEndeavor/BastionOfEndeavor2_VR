@@ -25,6 +25,18 @@
 	outdoors = 0
 	},
 /area/submap/groundbase/wilderness/east)
+"g" = (
+/obj/effect/landmark/wildlife/water,
+/turf/simulated/floor/water,
+/area/submap/groundbase/wilderness/east)
+"h" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/dark/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/east/unexplored)
+"i" = (
+/obj/effect/landmark/wildlife/water,
+/turf/simulated/floor/water/deep,
+/area/submap/groundbase/wilderness/east)
 "l" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/east/unexplored)
@@ -43,12 +55,15 @@
 "r" = (
 /turf/simulated/mineral/cave/virgo3c,
 /area/submap/groundbase/wilderness/east/cave)
+<<<<<<< HEAD
 "u" = (
 /obj/effect/landmark{
 	name = "carpspawn"
 	},
 /turf/simulated/floor/water/deep/virgo3c,
 /area/submap/groundbase/wilderness/east)
+=======
+>>>>>>> 9faf154bbb (Merge pull request #14294 from Heroman3003/roaming-wildlife)
 "w" = (
 /obj/effect/map_effect/portal/master/side_a/gb_wilds/east_west{
 	dir = 8
@@ -58,12 +73,15 @@
 "y" = (
 /turf/simulated/mineral/ignore_cavegen/virgo3c,
 /area/submap/groundbase/wilderness/east)
+<<<<<<< HEAD
 "B" = (
 /obj/effect/landmark{
 	name = "carpspawn"
 	},
 /turf/simulated/floor/water/virgo3c,
 /area/submap/groundbase/wilderness/east)
+=======
+>>>>>>> 9faf154bbb (Merge pull request #14294 from Heroman3003/roaming-wildlife)
 "F" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/wilderness/east/unexplored)
@@ -844,7 +862,7 @@ Z
 U
 U
 U
-U
+i
 U
 U
 U
@@ -1449,7 +1467,7 @@ U
 U
 Z
 Z
-Z
+g
 Z
 Z
 Z
@@ -2409,7 +2427,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -2679,7 +2697,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -2998,7 +3016,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -3447,7 +3465,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -3539,7 +3557,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -3878,7 +3896,7 @@ U
 U
 Z
 Z
-Z
+g
 Z
 Z
 V
@@ -4232,7 +4250,7 @@ Z
 Z
 Z
 Z
-Z
+g
 U
 U
 U
@@ -4709,7 +4727,7 @@ U
 U
 Z
 Z
-Z
+g
 Z
 Z
 V
@@ -4805,7 +4823,7 @@ Z
 U
 U
 U
-u
+U
 U
 U
 U
@@ -4865,7 +4883,7 @@ Z
 Z
 Z
 U
-u
+U
 U
 U
 U
@@ -4884,7 +4902,7 @@ F
 F
 l
 l
-l
+h
 l
 l
 l
@@ -5238,7 +5256,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -5271,7 +5289,7 @@ Z
 Z
 U
 U
-u
+U
 U
 U
 U
@@ -5440,7 +5458,7 @@ U
 U
 U
 U
-u
+U
 Z
 Z
 Z
@@ -5823,7 +5841,7 @@ l
 l
 l
 l
-l
+h
 l
 l
 l
@@ -6516,7 +6534,7 @@ U
 U
 U
 U
-U
+i
 Z
 Z
 Z
@@ -6544,7 +6562,7 @@ F
 V
 V
 Z
-B
+Z
 Z
 Z
 Z
@@ -6934,7 +6952,7 @@ Z
 Z
 Z
 Z
-u
+U
 U
 U
 U
@@ -6997,7 +7015,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 Z
@@ -7256,7 +7274,7 @@ V
 Z
 Z
 Z
-Z
+g
 Z
 Z
 V
@@ -7994,7 +8012,7 @@ U
 Z
 Z
 Z
-Z
+g
 Z
 Z
 Z
@@ -8218,7 +8236,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -8271,7 +8289,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -8595,7 +8613,7 @@ l
 l
 l
 l
-l
+h
 l
 l
 l
@@ -9001,7 +9019,7 @@ l
 l
 l
 l
-l
+h
 l
 l
 l
@@ -9487,7 +9505,7 @@ r
 r
 Z
 Z
-B
+Z
 Z
 U
 U
@@ -9814,7 +9832,7 @@ l
 l
 l
 l
-l
+h
 l
 l
 l
@@ -10212,7 +10230,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 Z
@@ -10348,7 +10366,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -10400,7 +10418,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -10925,7 +10943,7 @@ U
 U
 U
 U
-U
+i
 U
 Z
 Z
@@ -11245,7 +11263,7 @@ Z
 U
 U
 U
-u
+U
 U
 U
 U
@@ -11399,7 +11417,7 @@ U
 U
 U
 U
-u
+U
 U
 Z
 Z
@@ -11502,15 +11520,15 @@ U
 U
 U
 U
-u
 U
 U
 U
+U
 Z
 Z
 Z
 Z
-Z
+g
 Z
 Z
 Z
@@ -12107,7 +12125,7 @@ U
 U
 U
 Z
-Z
+g
 Z
 Z
 Z
@@ -12335,10 +12353,10 @@ Z
 Z
 Z
 Z
+g
 Z
 Z
 Z
-Z
 U
 U
 U
@@ -12363,7 +12381,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -12482,7 +12500,7 @@ Z
 Z
 Z
 U
-u
+U
 U
 U
 U
@@ -12804,7 +12822,7 @@ U
 U
 U
 U
-u
+U
 U
 U
 U
@@ -13405,7 +13423,7 @@ l
 l
 l
 l
-l
+h
 l
 F
 F
@@ -13658,7 +13676,7 @@ Z
 U
 U
 U
-U
+i
 Z
 Z
 Z
@@ -13783,7 +13801,7 @@ Z
 Z
 U
 U
-u
+U
 U
 U
 U
@@ -13793,7 +13811,7 @@ Z
 Z
 Z
 Z
-B
+Z
 Z
 Z
 Z
@@ -14461,7 +14479,7 @@ F
 l
 l
 l
-l
+h
 l
 l
 l
@@ -15083,7 +15101,7 @@ l
 l
 l
 l
-l
+h
 l
 l
 F
@@ -15465,7 +15483,7 @@ l
 l
 l
 l
-l
+h
 l
 l
 l
@@ -15779,7 +15797,7 @@ Z
 Z
 Z
 Z
-Z
+g
 Z
 Z
 Z
@@ -15919,7 +15937,7 @@ V
 V
 V
 Z
-B
+Z
 Z
 Z
 Z
@@ -18351,7 +18369,7 @@ l
 l
 l
 l
-l
+h
 l
 F
 F

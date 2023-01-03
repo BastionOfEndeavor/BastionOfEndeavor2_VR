@@ -2,9 +2,17 @@
 "a" = (
 /turf/unsimulated/wall/planetary/virgo3c,
 /area/submap/groundbase/wilderness/south)
+"b" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/south/unexplored)
 "c" = (
 /turf/simulated/mineral/cave/virgo3c,
 /area/submap/groundbase/wilderness/south/cave)
+"d" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/dark/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/south/unexplored)
 "l" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/wilderness/south)
@@ -2973,7 +2981,7 @@ H
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -3097,7 +3105,7 @@ c
 H
 H
 Y
-Y
+d
 Y
 H
 c
@@ -4197,7 +4205,7 @@ H
 H
 H
 Y
-Y
+d
 Y
 H
 c
@@ -4285,7 +4293,7 @@ c
 H
 Y
 Y
-Y
+d
 Y
 H
 c
@@ -6680,7 +6688,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -6879,9 +6887,9 @@ c
 c
 c
 H
+b
 H
 H
-H
 c
 c
 c
@@ -6901,24 +6909,6 @@ c
 c
 c
 H
-Y
-Y
-Y
-Y
-H
-H
-H
-H
-H
-H
-H
-H
-H
-Y
-Y
-Y
-Y
-Y
 Y
 Y
 Y
@@ -6929,6 +6919,24 @@ H
 H
 H
 H
+H
+H
+H
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+H
+H
+H
+H
+H
+H
 c
 c
 c
@@ -6948,7 +6956,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -7043,7 +7051,7 @@ c
 H
 H
 H
-Y
+d
 Y
 Y
 Y
@@ -7484,7 +7492,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -7924,7 +7932,7 @@ H
 H
 H
 Y
-Y
+d
 Y
 Y
 Y
@@ -9789,7 +9797,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -9920,7 +9928,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -10116,7 +10124,7 @@ H
 Y
 Y
 Y
-Y
+d
 H
 H
 H
@@ -10465,7 +10473,7 @@ H
 Y
 Y
 Y
-Y
+d
 Y
 Y
 H
@@ -11770,7 +11778,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -12281,7 +12289,7 @@ H
 H
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -12359,7 +12367,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 H
 H
@@ -13596,7 +13604,7 @@ Y
 Y
 Y
 Y
-Y
+d
 H
 H
 H
@@ -14894,7 +14902,7 @@ H
 H
 H
 Y
-Y
+d
 H
 H
 H
@@ -15839,7 +15847,7 @@ Y
 Y
 Y
 Y
-Y
+d
 Y
 Y
 Y
@@ -16485,7 +16493,7 @@ Y
 Y
 Y
 Y
-Y
+d
 H
 H
 H

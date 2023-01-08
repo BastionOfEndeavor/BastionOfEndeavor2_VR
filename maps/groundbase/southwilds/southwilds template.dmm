@@ -3,36 +3,59 @@
 /turf/unsimulated/wall/planetary/virgo3c,
 /area/submap/groundbase/wilderness/south)
 "c" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south/unexplored)
 "B" = (
 /obj/effect/map_effect/portal/master/side_b/gb_wilds/north_south{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south)
 "C" = (
 /obj/effect/map_effect/portal/line/side_b{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south)
 "H" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/wilderness/south)
 "K" = (
 /obj/effect/map_effect/portal/line/side_b,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south)
 "Q" = (
 /turf/simulated/mineral/ignore_cavegen,
 /area/submap/groundbase/wilderness/south/cave)
 "S" = (
 /obj/effect/map_effect/portal/master/side_b/gb_wilds/south,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/south)
 "Y" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+/area/submap/groundbase/wilderness/south)
+"Y" = (
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south)
 
 (1,1,1) = {"

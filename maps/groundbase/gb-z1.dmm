@@ -135,7 +135,11 @@
 /obj/effect/landmark{
 	name = "droppod_landing"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/southeastspur)
 "as" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -538,7 +542,7 @@
 	},
 /turf/simulated/floor/tiled/dark/virgo3c{
 	edge_blending_priority = -1;
-	outdoors = 0
+	outdoors = 1
 	},
 /area/groundbase/security/lobby)
 "bq" = (
@@ -1785,10 +1789,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/groundbase/medical/or1)
+<<<<<<< HEAD
 "dS" = (
 /obj/effect/map_effect/portal/line/side_a,
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/groundbase/level1/nw)
+=======
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 "dT" = (
 /obj/machinery/telecomms/bus/preset_two/groundbase,
 /turf/simulated/floor/tiled/dark{
@@ -2267,7 +2274,11 @@
 /turf/simulated/floor,
 /area/maintenance/groundbase/substation/secsci)
 "eW" = (
+<<<<<<< HEAD
 /turf/simulated/floor/water/deep/virgo3c,
+=======
+/turf/simulated/floor/water/deep/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "eX" = (
 /obj/machinery/suit_cycler/security,
@@ -6648,7 +6659,7 @@
 	},
 /turf/simulated/floor/tiled/dark/virgo3c{
 	edge_blending_priority = -1;
-	outdoors = 0
+	outdoors = 1
 	},
 /area/groundbase/security/lobby)
 "oI" = (
@@ -6837,7 +6848,11 @@
 	},
 /area/maintenance/groundbase/level1/netunnel)
 "pc" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/unexplored/outdoors)
 "pe" = (
 /obj/machinery/firealarm{
@@ -7579,7 +7594,11 @@
 /obj/effect/map_effect/portal/line/side_a{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/water/deep/virgo3c,
+=======
+/turf/simulated/floor/water/deep/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "re" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -8541,7 +8560,11 @@
 /obj/effect/map_effect/portal/master/side_a/gb_wilds/west{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/westspur)
 "tr" = (
 /obj/structure/table/rack/shelf/steel,
@@ -8652,7 +8675,11 @@
 /obj/effect/landmark{
 	name = "droppod_landing"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/unexplored/outdoors)
 "tF" = (
 /obj/structure/cable{
@@ -9069,7 +9096,11 @@
 /turf/simulated/floor/tiled,
 /area/groundbase/engineering/ce)
 "uH" = (
+<<<<<<< HEAD
 /turf/simulated/floor/water/virgo3c,
+=======
+/turf/simulated/floor/water/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "uI" = (
 /obj/machinery/hologram/holopad,
@@ -11362,6 +11393,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/groundbase/engineering/atmos)
+<<<<<<< HEAD
 "Af" = (
 /obj/effect/map_effect/portal/line/side_a{
 	dir = 4
@@ -11370,6 +11402,10 @@
 /area/groundbase/level1/westspur)
 "Ah" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+"Ah" = (
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "Ai" = (
 /obj/machinery/conveyor_switch/oneway{
@@ -12359,7 +12395,11 @@
 /obj/effect/map_effect/portal/master/side_a/gb_wilds/east{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/water/virgo3c,
+=======
+/turf/simulated/floor/water/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "CG" = (
 /obj/structure/table/reinforced,
@@ -13142,7 +13182,11 @@
 /obj/effect/map_effect/portal/line/side_a{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/water/virgo3c,
+=======
+/turf/simulated/floor/water/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "ED" = (
 /turf/simulated/floor/outdoors/sidewalk/virgo3c,
@@ -13160,6 +13204,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/groundbase/medical/or2)
+"EG" = (
+/turf/simulated/floor/tiled/dark{
+	edge_blending_priority = -1;
+	outdoors = 1
+	},
+/area/groundbase/security/lobby)
 "EH" = (
 /obj/structure/bed/chair/sofa/bench{
 	dir = 4
@@ -13697,7 +13747,11 @@
 /area/groundbase/level1/centsquare)
 "Gf" = (
 /obj/random/coin/sometimes,
+<<<<<<< HEAD
 /turf/simulated/floor/water/deep/virgo3c,
+=======
+/turf/simulated/floor/water/deep/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "Gg" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
@@ -15775,7 +15829,11 @@
 /turf/simulated/floor/tiled/white,
 /area/groundbase/medical/lhallway)
 "Lb" = (
+<<<<<<< HEAD
 /turf/simulated/floor/water/virgo3c{
+=======
+/turf/simulated/floor/water/seasonal{
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	outdoors = 0
 	},
 /area/groundbase/level1/eastspur)
@@ -16035,6 +16093,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/groundbase/engineering/atmos)
+"LF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/dark{
+	edge_blending_priority = -1;
+	outdoors = 1
+	},
+/area/groundbase/security/lobby)
 "LG" = (
 /obj/machinery/computer/power_monitor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -16085,7 +16152,11 @@
 /area/maintenance/groundbase/substation/medcargo)
 "LM" = (
 /obj/effect/map_effect/portal/master/side_a/gb_wilds/north,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/nw)
 "LN" = (
 /obj/machinery/firealarm{
@@ -16774,7 +16845,11 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/groundbase/level1/westspur)
 "Nv" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/centsquare)
 "Nw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -17446,7 +17521,11 @@
 /area/groundbase/security/halle)
 "Pg" = (
 /obj/effect/landmark/vines,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/centsquare)
 "Ph" = (
 /obj/structure/cable{
@@ -17504,7 +17583,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/groundbase/civilian/arrivals)
 "Pp" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/southeastspur)
 "Pq" = (
 /obj/structure/table/rack/shelf,
@@ -17997,7 +18080,11 @@
 /turf/simulated/floor/tiled/white,
 /area/groundbase/medical/equipment)
 "QD" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/westspur)
 "QF" = (
 /obj/effect/floor_decal/techfloor/orange{
@@ -18376,7 +18463,11 @@
 /obj/effect/landmark{
 	name = "carpspawn"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/water/deep/virgo3c,
+=======
+/turf/simulated/floor/water/deep/seasonal,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/eastspur)
 "RC" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -19798,7 +19889,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/groundbase/security/equipment)
 "UX" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level1/northspur)
 "UY" = (
 /obj/structure/disposalpipe/segment,
@@ -21895,7 +21990,7 @@ Rl
 Rl
 Rl
 IT
-Af
+uW
 uW
 rC
 uW
@@ -22037,11 +22132,11 @@ IT
 IT
 IT
 IT
-pc
+eR
 eR
 mG
 eR
-pc
+eR
 IT
 gh
 IT
@@ -22183,7 +22278,7 @@ eR
 eR
 mG
 eR
-pc
+eR
 pc
 gh
 IT
@@ -27322,7 +27417,7 @@ cB
 sR
 uy
 EJ
-Qv
+LF
 Qv
 fe
 CU
@@ -27464,7 +27559,7 @@ cB
 Yf
 YM
 os
-fm
+EG
 fm
 qk
 nx
@@ -27604,9 +27699,15 @@ cB
 cB
 cB
 Yf
+<<<<<<< HEAD
 cB
 ij
 fm
+=======
+OL
+yc
+EG
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 fm
 wl
 nx
@@ -27748,7 +27849,7 @@ sO
 tI
 sO
 vQ
-fm
+EG
 Ch
 wl
 wl
@@ -27888,9 +27989,15 @@ cB
 cB
 cB
 Yf
+<<<<<<< HEAD
 cB
 ij
 fm
+=======
+OL
+yc
+EG
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 fm
 wl
 CW
@@ -28032,7 +28139,7 @@ cB
 Yf
 cB
 ij
-fm
+EG
 fm
 ZE
 Aj
@@ -28174,7 +28281,7 @@ cB
 Yf
 cB
 ij
-fm
+EG
 fm
 PE
 wi
@@ -28316,7 +28423,7 @@ cB
 Yf
 cB
 ij
-fm
+EG
 fm
 ZE
 hQ
@@ -28458,7 +28565,7 @@ cB
 Yf
 cB
 ij
-fm
+EG
 fm
 wl
 xr
@@ -28600,7 +28707,7 @@ cB
 Yf
 cB
 ij
-fm
+EG
 fm
 ZE
 gm
@@ -28742,7 +28849,7 @@ cB
 Yf
 cB
 ij
-fm
+EG
 fm
 VB
 XO
@@ -31058,8 +31165,8 @@ IV
 "}
 (66,1,1) = {"
 LM
-UX
-pc
+tG
+eR
 eR
 eR
 eR
@@ -31625,9 +31732,9 @@ ce
 IV
 "}
 (70,1,1) = {"
-dS
-UX
-pc
+SV
+tG
+eR
 pc
 pc
 pc

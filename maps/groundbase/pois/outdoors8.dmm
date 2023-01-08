@@ -3,11 +3,19 @@
 /turf/template_noop,
 /area/template_noop)
 "A" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/poi/outdoor)
 "P" = (
 /obj/structure/prop/rock/crystal,
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+/area/submap/groundbase/poi/outdoor)
+"P" = (
+/obj/structure/prop/rock/crystal,
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/poi/outdoor)
 "R" = (
 /turf/simulated/floor/outdoors/newdirt/virgo3c,

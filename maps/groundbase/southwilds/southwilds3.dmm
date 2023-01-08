@@ -18,10 +18,25 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/poi/wildvillage/plot/long)
 "f" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/poi/wildvillage/plot/square)
 "j" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+/area/submap/groundbase/poi/wildvillage/plot/square)
+"g" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/south/unexplored)
+"h" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+/area/submap/groundbase/wilderness/south/unexplored)
+"j" = (
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/poi/wildvillage/plot/wide)
 "l" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
@@ -30,7 +45,11 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/poi/wildvillage/plot/long)
 "t" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south)
 "v" = (
 /turf/simulated/floor/outdoors/sidewalk/slab/virgo3c,
@@ -40,7 +59,11 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/poi/wildvillage)
 "z" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/poi/wildvillage/plot/long)
 "A" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
@@ -49,6 +72,7 @@
 /obj/effect/map_effect/portal/master/side_b/gb_wilds/north_south{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/south)
 "C" = (
@@ -56,6 +80,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south)
 "E" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
@@ -66,10 +93,13 @@
 "H" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/wilderness/south/unexplored)
+<<<<<<< HEAD
 "K" = (
 /obj/effect/map_effect/portal/line/side_b,
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/south)
+=======
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 "L" = (
 /obj/effect/map_effect/portal/line/side_b{
 	dir = 1
@@ -77,7 +107,11 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/wilderness/south)
 "O" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/poi/wildvillage)
 "P" = (
 /obj/effect/map_effect/portal/line/side_b,
@@ -88,10 +122,17 @@
 /area/submap/groundbase/wilderness/south)
 "S" = (
 /obj/effect/map_effect/portal/master/side_b/gb_wilds/south,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/south)
 "Y" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/south)
+"Y" = (
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/south/unexplored)
 
 (1,1,1) = {"
@@ -7764,8 +7805,8 @@ a
 "}
 (55,1,1) = {"
 S
-t
-t
+l
+l
 l
 H
 H
@@ -8331,8 +8372,8 @@ Q
 a
 "}
 (59,1,1) = {"
-K
-t
+P
+l
 l
 l
 H
@@ -9747,8 +9788,8 @@ Y
 Y
 l
 l
-t
-C
+l
+L
 "}
 (69,1,1) = {"
 a
@@ -10314,8 +10355,8 @@ H
 H
 H
 l
-t
-t
+l
+l
 B
 "}
 (73,1,1) = {"

@@ -2,6 +2,7 @@
 "a" = (
 /turf/unsimulated/wall/planetary/virgo3c,
 /area/submap/groundbase/wilderness/north)
+<<<<<<< HEAD
 "d" = (
 /obj/effect/map_effect/portal/line/side_b{
 	dir = 1
@@ -12,15 +13,32 @@
 /obj/effect/map_effect/portal/line/side_a,
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/north)
+=======
+"b" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/north/unexplored)
+"c" = (
+/obj/effect/landmark/wildlife/forest,
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+/area/submap/groundbase/wilderness/north/unexplored)
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 "m" = (
 /turf/simulated/mineral/ignore_cavegen/virgo3c,
 /area/submap/groundbase/wilderness/north)
 "p" = (
 /obj/effect/map_effect/portal/master/side_a/gb_wilds/north_south,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
 /area/submap/groundbase/wilderness/north)
 "s" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+/area/submap/groundbase/wilderness/north)
+"s" = (
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/north)
 "w" = (
 /obj/effect/map_effect/portal/line/side_a,
@@ -36,7 +54,11 @@
 /obj/effect/map_effect/portal/master/side_b/gb_wilds/north{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/notrees_nomobs_lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/north)
 "P" = (
 /obj/effect/map_effect/portal/line/side_b{
@@ -48,7 +70,11 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/submap/groundbase/wilderness/north)
 "X" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/north/unexplored)
 
 (1,1,1) = {"
@@ -9420,7 +9446,7 @@ K
 K
 T
 T
-s
+T
 N
 "}
 (67,1,1) = {"
@@ -9566,9 +9592,9 @@ T
 P
 "}
 (68,1,1) = {"
-g
-s
-s
+w
+T
+T
 s
 X
 X
@@ -9987,9 +10013,9 @@ K
 K
 K
 s
-s
-s
-d
+T
+T
+P
 "}
 (71,1,1) = {"
 w
@@ -10135,8 +10161,8 @@ a
 "}
 (72,1,1) = {"
 p
-s
-s
+T
+T
 T
 K
 K

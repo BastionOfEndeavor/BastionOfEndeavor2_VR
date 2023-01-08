@@ -9,8 +9,14 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "ac" = (
@@ -215,7 +221,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/landmark/start/chemist,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "dX" = (
 /obj/structure/grille,
@@ -230,8 +242,14 @@
 /turf/simulated/floor,
 /area/shuttle/groundbase/exploration)
 "ed" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw)
 "ei" = (
@@ -291,7 +309,13 @@
 "fu" = (
 /obj/structure/table/bench/marble,
 /obj/effect/landmark/start/chemist,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "fy" = (
 /obj/structure/bed/chair/backed_red{
@@ -338,7 +362,13 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "gc" = (
 /obj/machinery/light/floortube,
@@ -364,14 +394,26 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "gs" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "gu" = (
@@ -453,7 +495,13 @@
 "hN" = (
 /obj/structure/table/bench/marble,
 /obj/effect/landmark/start/medical,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "hO" = (
 /obj/effect/landmark/map_data/groundbase,
@@ -590,7 +638,13 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "kB" = (
 /turf/simulated/floor/outdoors/grass/virgo3c,
@@ -614,8 +668,14 @@
 /turf/simulated/floor/tiled/white,
 /area/groundbase/medical/paramedic)
 "kU" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/sw/open)
 "lk" = (
@@ -686,7 +746,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "mr" = (
 /turf/unsimulated/wall/planetary/virgo3c,
@@ -851,7 +917,11 @@
 /area/shuttle/groundbase/exploration)
 "ok" = (
 /obj/random/mob/bird,
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/unexplored/outdoors)
 "om" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1052,7 +1122,13 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "qW" = (
 /obj/structure/cable/yellow{
@@ -1165,8 +1241,14 @@
 	},
 /area/shuttle/groundbase/exploration)
 "sP" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/ne)
 "sQ" = (
@@ -1284,8 +1366,14 @@
 /turf/simulated/floor/tiled,
 /area/groundbase/civilian/pilot)
 "vs" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/unexplored/outdoors)
 "vu" = (
@@ -1427,7 +1515,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "xs" = (
 /obj/structure/railing/grey,
@@ -1482,7 +1576,13 @@
 /turf/simulated/floor/outdoors/grass/virgo3c,
 /area/groundbase/level3/nw)
 "xX" = (
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "ym" = (
 /obj/structure/cable/yellow{
@@ -1509,8 +1609,14 @@
 /turf/simulated/floor/tiled/white,
 /area/groundbase/medical/paramedic)
 "yA" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/se/open)
 "yQ" = (
@@ -1525,7 +1631,13 @@
 	dir = 1
 	},
 /obj/random/vendorall,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "zb" = (
 /obj/structure/cable/yellow{
@@ -1567,7 +1679,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "zK" = (
 /obj/structure/closet/walllocker_double{
@@ -1695,7 +1813,13 @@
 	dir = 1
 	},
 /obj/effect/landmark/start/cmo,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "BE" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -1706,8 +1830,14 @@
 /area/groundbase/medical/patient3)
 "BM" = (
 /obj/structure/catwalk,
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "Cc" = (
@@ -2012,8 +2142,14 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "FO" = (
@@ -2058,7 +2194,13 @@
 	dir = 1
 	},
 /obj/machinery/vending/coffee,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "Gx" = (
 /obj/machinery/photocopier,
@@ -2087,12 +2229,24 @@
 /obj/machinery/light{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
 /area/groundbase/medical/patio)
 "Hx" = (
 /obj/structure/railing/grey,
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+/area/groundbase/medical/patio)
+"Hx" = (
+/obj/structure/railing/grey,
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/medical/patio)
 "HE" = (
@@ -2108,7 +2262,13 @@
 /obj/machinery/light{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "HP" = (
 /turf/simulated/wall,
@@ -2182,8 +2342,14 @@
 /area/groundbase/medical/patient1)
 "IH" = (
 /obj/effect/shuttle_landmark/premade/groundbase,
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "IP" = (
@@ -2206,7 +2372,13 @@
 /area/groundbase/civilian/kitchen)
 "Jf" = (
 /obj/machinery/hologram/holopad,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "Jh" = (
 /turf/simulated/floor/tiled/eris/dark/panels,
@@ -2401,7 +2573,13 @@
 /obj/machinery/camera/network/medbay{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "MM" = (
 /obj/structure/closet/secure_closet/personal/patient,
@@ -2558,7 +2736,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "OT" = (
 /obj/structure/lattice,
@@ -2568,7 +2752,13 @@
 /obj/item/device/radio/intercom{
 	pixel_y = -24
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "Pf" = (
 /obj/machinery/power/smes/buildable{
@@ -2662,7 +2852,13 @@
 /obj/machinery/camera/network/medbay{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "PV" = (
 /obj/structure/cable/yellow{
@@ -2676,10 +2872,19 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
 /area/groundbase/medical/patio)
 "Qa" = (
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+/area/groundbase/medical/patio)
+"Qa" = (
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/level3/nw)
 "Qb" = (
 /obj/structure/railing{
@@ -2717,8 +2922,14 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 6
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "Qq" = (
@@ -2755,8 +2966,14 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/groundbase/medical/uhallway)
 "QD" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "QO" = (
@@ -2772,7 +2989,13 @@
 /area/groundbase/medical/cmo)
 "Rh" = (
 /obj/structure/table/reinforced,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "Ri" = (
 /obj/item/modular_computer/console/preset/command,
@@ -2999,7 +3222,11 @@
 /obj/effect/landmark{
 	name = "droppod_landing"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/unexplored/outdoors)
 "Uf" = (
 /obj/structure/cable/yellow{
@@ -3144,7 +3371,11 @@
 /turf/simulated/floor/carpet,
 /area/groundbase/medical/cmo)
 "Xv" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/unexplored/outdoors)
 "Xz" = (
 /obj/structure/railing,
@@ -3169,8 +3400,14 @@
 /area/groundbase/exploration/shuttlepad)
 "XL" = (
 /obj/effect/floor_decal/industrial/warning,
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/level3/nw/open)
 "XT" = (
@@ -3194,8 +3431,14 @@
 /turf/simulated/floor/tiled/white,
 /area/groundbase/dorms/bathroom)
 "YG" = (
+<<<<<<< HEAD
 /turf/simulated/floor/virgo3c{
 	edge_blending_priority = -1
+=======
+/turf/simulated/floor{
+	edge_blending_priority = -1;
+	outdoors = 1
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 	},
 /area/groundbase/civilian/kitchen)
 "YJ" = (
@@ -3241,7 +3484,13 @@
 	dir = 8
 	},
 /obj/effect/landmark/start/paramedic,
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/virgo3c,
+=======
+/turf/simulated/floor/tiled{
+	outdoors = 1
+	},
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/groundbase/medical/patio)
 "Zn" = (
 /obj/machinery/firealarm{

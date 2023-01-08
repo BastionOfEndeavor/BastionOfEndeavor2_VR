@@ -3,7 +3,11 @@
 /turf/unsimulated/wall/planetary/virgo3c,
 /area/submap/groundbase/wilderness/east)
 "b" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/east)
 "d" = (
 /obj/effect/map_effect/portal/line/side_b{
@@ -12,7 +16,11 @@
 /turf/simulated/floor/water/virgo3c,
 /area/submap/groundbase/wilderness/east)
 "l" = (
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/east/unexplored)
 "r" = (
 /turf/simulated/mineral/ignore_cavegen,
@@ -24,7 +32,11 @@
 /obj/effect/map_effect/portal/master/side_a/gb_wilds/east_west{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/east)
 "V" = (
 /obj/effect/map_effect/portal/master/side_b/gb_wilds/east{
@@ -36,7 +48,11 @@
 /obj/effect/map_effect/portal/line/side_a{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/outdoors/grass/forest/virgo3c,
+=======
+/turf/simulated/floor/outdoors/grass/seasonal/dark/lowsnow,
+>>>>>>> 47369cec9e (Merge pull request #14312 from Very-Soft/moreRPedits)
 /area/submap/groundbase/wilderness/east)
 "Z" = (
 /turf/simulated/floor/water/virgo3c,

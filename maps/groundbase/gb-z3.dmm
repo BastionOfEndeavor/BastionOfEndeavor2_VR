@@ -877,8 +877,16 @@
 	},
 /area/groundbase/level3/escapepad)
 "oF" = (
+<<<<<<< HEAD
 /obj/effect/overmap/visitable/sector/virgo3c,
 /turf/unsimulated/wall/planetary/virgo3c,
+=======
+/turf/unsimulated/wall/planetary/normal{
+	desc = "It's quite impassable";
+	icon_state = "rock-dark";
+	name = "impassable rock"
+	},
+>>>>>>> 397a5209e4 (Merge pull request #14323 from Heroman3003/3c-lm)
 /area/groundbase/level3/sw)
 "oI" = (
 /obj/machinery/light{
@@ -1540,8 +1548,17 @@
 /turf/simulated/wall,
 /area/groundbase/medical/paramedic)
 "zh" = (
+<<<<<<< HEAD
 /obj/effect/overmap/visitable/sector/virgo3b,
 /turf/unsimulated/wall/planetary/virgo3c,
+=======
+/obj/effect/overmap/visitable/sector/virgo3c,
+/turf/unsimulated/wall/planetary/normal{
+	desc = "It's quite impassable";
+	icon_state = "rock-dark";
+	name = "impassable rock"
+	},
+>>>>>>> 397a5209e4 (Merge pull request #14323 from Heroman3003/3c-lm)
 /area/groundbase/level3/sw)
 "zF" = (
 /obj/machinery/computer/ship/sensors{

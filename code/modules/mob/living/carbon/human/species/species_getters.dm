@@ -91,9 +91,21 @@
 
 	var/discomfort_message
 	if(msg_type == ENVIRONMENT_COMFORT_MARKER_COLD && length(cold_discomfort_strings) /*&& !covered*/)
+<<<<<<< HEAD
 		discomfort_message = pick(cold_discomfort_strings)
 	else if(msg_type == ENVIRONMENT_COMFORT_MARKER_HOT && length(heat_discomfort_strings) /*&& covered*/)
 		discomfort_message = pick(heat_discomfort_strings)
+=======
+		if(custom_cold && custom_cold.len > 0)
+			discomfort_message = pick(custom_cold)
+		else
+			discomfort_message = pick(cold_discomfort_strings)
+	else if(msg_type == ENVIRONMENT_COMFORT_MARKER_HOT && length(heat_discomfort_strings) /*&& covered*/)
+		if(custom_heat && custom_heat.len > 0)
+			discomfort_message = pick(custom_heat)
+		else
+			discomfort_message = pick(heat_discomfort_strings)
+>>>>>>> fa5d8be2e5 (Merge pull request #14441 from Heroman3003/runtime-fixes)
 
 	if(discomfort_message && prob(5))
 		to_chat(H, SPAN_DANGER(discomfort_message))

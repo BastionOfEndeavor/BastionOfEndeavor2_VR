@@ -14,7 +14,16 @@
 	name = "halo"
 	desc = "a small metal ring, floating above it's wearer."
 	icon_state = "halo"
+<<<<<<< HEAD
 	
+=======
+
+/obj/item/clothing/head/headband/maid/modern
+	name = "modern maid headband"
+	desc = "Just like from my Japanese cartoons!"
+	icon_state = "maid_headband"
+
+>>>>>>> ae50289441 (Merge pull request #14446 from Hatterhat/outfit-pass2)
 /obj/item/clothing/head/pin
 	icon_state = "pin"
 	addblends = "pin_a"

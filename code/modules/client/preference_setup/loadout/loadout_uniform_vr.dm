@@ -311,4 +311,16 @@ Talon jumpsuit
 /datum/gear/uniform/modernsec
     display_name = "undersuit, security, modernized (Security)"
     allowed_roles = list("Head of Security", "Warden", "Detective", "Security Officer")
+<<<<<<< HEAD
     path = /obj/item/clothing/under/rank/security/modern
+=======
+    path = /obj/item/clothing/under/rank/security/modern
+
+/datum/gear/uniform/singer_blue
+	display_name = "blue singer dress"
+	path = /obj/item/clothing/under/dress/singer
+
+/datum/gear/uniform/singer_yellow
+	display_name = "yellow singer dress"
+	path = /obj/item/clothing/under/dress/singer/yellow
+>>>>>>> ae50289441 (Merge pull request #14446 from Hatterhat/outfit-pass2)

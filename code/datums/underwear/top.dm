@@ -70,4 +70,28 @@
 
 /datum/category_item/underwear/top/straplessbinder
 	name = "Binder Strapless"
+<<<<<<< HEAD
 	icon_state = "straplessbinder_s"
+=======
+	icon_state = "straplessbinder_s"
+
+/datum/category_item/underwear/top/onesleeve
+	name = "One Sleeve"
+	icon_state = "onesleeve"
+	has_color = TRUE
+
+/datum/category_item/underwear/top/neko
+	name = "Neko bra"
+	icon_state = "bra_neko"
+	has_color = TRUE
+
+/datum/category_item/underwear/top/tape
+	name = "Tape"
+	icon_state = "pasties_alt"
+	has_color = TRUE
+
+/datum/category_item/underwear/top/sarashi
+	name = "Sarashi"
+	icon_state = "bandages"
+	has_color = TRUE
+>>>>>>> 1976342d32 (Merge pull request #14470 from Burrito-Justice/master)

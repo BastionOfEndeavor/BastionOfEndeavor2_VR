@@ -20,3 +20,18 @@
 /datum/gear/shoes/toeless
 	display_name = "toe-less jackboots"
 	path = /obj/item/clothing/shoes/boots/jackboots/toeless
+<<<<<<< HEAD
+=======
+
+/datum/gear/shoes/singer_blue
+	display_name = "blue performer's boots"
+	path = /obj/item/clothing/shoes/boots/singer
+
+/datum/gear/shoes/singer_yellow
+	display_name = "yellow performer's boots"
+	path = /obj/item/clothing/shoes/boots/singer/yellow
+
+/datum/gear/shoes/antediluvian
+	display_name = "antediluvian legwraps"
+	path = /obj/item/clothing/shoes/antediluvian
+>>>>>>> 1976342d32 (Merge pull request #14470 from Burrito-Justice/master)

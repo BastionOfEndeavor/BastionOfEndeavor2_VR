@@ -57,6 +57,14 @@
 	..()
 	gear_tweaks += gear_tweak_free_color_choice
 
+/datum/gear/head/wedding
+	display_name = "wedding veil"
+	path = /obj/item/clothing/head/wedding
+
+/datum/gear/head/wedding/New()
+	..()
+	gear_tweaks += gear_tweak_free_color_choice
+
 /*
 Talon hats
 */

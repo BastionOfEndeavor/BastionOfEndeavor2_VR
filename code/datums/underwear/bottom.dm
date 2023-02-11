@@ -67,4 +67,17 @@
 /datum/category_item/underwear/bottom/longjon
 	name = "Long John Bottoms"
 	icon_state = "ljonb"
+<<<<<<< HEAD
+=======
+	has_color = TRUE
+
+/datum/category_item/underwear/bottom/thinpanties
+	name = "Panties, Thin"
+	icon_state = "thinpanties"
+	has_color = TRUE
+
+/datum/category_item/underwear/bottom/neko
+	name = "Panties, Neko"
+	icon_state = "panties_neko"
+>>>>>>> 1976342d32 (Merge pull request #14470 from Burrito-Justice/master)
 	has_color = TRUE

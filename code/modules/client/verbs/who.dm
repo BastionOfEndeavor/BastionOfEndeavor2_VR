@@ -1,8 +1,16 @@
 /client/verb/who()
+	/* Bastion of Endeavor Translation
 	set name = "Who"
 	set category = "OOC"
 
 	var/msg = "<b>Current Players:</b>\n"
+	*/
+	set name = "Кто онлайн"
+	set category = "OOC"
+	set desc = "Показать, кто сейчас подключён к серверу."
+
+	var/msg = "<b>Игроки онлайн:</b>\n"
+	// End of Bastion of Endeavor Translation
 
 	var/list/Lines = list()
 
@@ -12,37 +20,67 @@
 			continue
 		var/entry = "\t[C.key]"
 		if(C.holder?.fakekey)
+		/* Bastion of Endeavor Translation: Risky but we'll see
 			entry += " <i>(as [C.holder.fakekey])</i>"
 		entry += " - Playing as [C.mob.real_name]"
+		*/
+			entry += " <i>(как [C.holder.fakekey])</i>"
+		entry += " - Играет за [acase_ru(C.mob, secondary = "real_name")]"
+		// End of Bastion of Endeavor Translation
 		switch(C.mob.stat)
 			if(UNCONSCIOUS)
+				/* Bastion of Endeavor Translation
 				entry += " - <font color='darkgray'><b>Unconscious</b></font>"
+				*/
+				entry += " - <font color='darkgray'><b>Без сознания</b></font>"
+				// End of Bastion of Endeavor Translation
 			if(DEAD)
 				if(isobserver(C.mob))
 					var/mob/observer/dead/O = C.mob
+				/* Bastion of Endeavor Translation
 					if(O.started_as_observer)
 						entry += " - <font color='gray'>Observing</font>"
 					else
 						entry += " - <font color='black'><b>DEAD</b></font>"
 				else
 					entry += " - <font color='black'><b>DEAD</b></font>"
+				*/
+					if(O.started_as_observer)
+						entry += " - <font color='gray'>Наблюдает</font>"
+					else
+						entry += " - <font color='black'><b>[verb_ru(C.mob, ";Мёртв;Мертва;Мертво;Мертвы;", index_v = "real_name")]</b></font>"
+				else
+					entry += " - <font color='black'><b>[verb_ru(C.mob, ";Мёртв;Мертва;Мертво;Мертвы;", index_v = "real_name")]</b></font>"
+				// End of Bastion of Endeavor Translation
 
 		if(C.player_age != initial(C.player_age) && isnum(C.player_age)) // database is on
 			var/age = C.player_age
 			switch(age)
+				/* Bastion of Endeavor Translation
 				if(0 to 1)
 					age = "<font color='#ff0000'><b>[age] days old</b></font>"
 				if(1 to 10)
 					age = "<font color='#ff8c00'><b>[age] days old</b></font>"
 				else
 					entry += " - [age] days old"
+				*/
+				entry += " - Возраст: [count_ru(age, "день;дня;дней")]"
+				// End of Bastion of Endeavor Translation
 
 		if(is_special_character(C.mob))
+			/* Bastion of Endeavor Translation
 			entry += " - <b><font color='red'>Antagonist</font></b>"
+			*/
+			entry += " - <b><font color='red'>Антагонист</font></b>"
+			// End of Bastion of Endeavor Translation
 
 		if(C.is_afk())
 			var/seconds = C.last_activity_seconds()
+			/* Bastion of Endeavor Translation
 			entry += " (AFK - [round(seconds / 60)] minutes, [seconds % 60] seconds)"
+			*/
+			entry += " (АФК - [count_ru(round(seconds / 60), "минут;у;ы;")] minutes, [seconds % 60] seconds)"
+			// End of Bastion of Endeavor Translation
 
 		entry += " [ADMIN_QUE(C.mob)]"
 		Lines += entry

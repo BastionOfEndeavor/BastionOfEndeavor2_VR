@@ -11,7 +11,7 @@
 	/* Bastion of Endeavor Edit: Russian icons. Don't see the harm in defining them here.
 	icon = 'icons/mob/screen1.dmi'
 	*/
-	icon = 'russian/icons/screen1_ru.dmi'
+	icon = 'russian/icons/mob/screen1_ru.dmi'
 	// End of Bastion of Endeavor Edit
 	appearance_flags = TILE_BOUND|PIXEL_SCALE|NO_CLIENT_COLOR
 	layer = LAYER_HUD_BASE

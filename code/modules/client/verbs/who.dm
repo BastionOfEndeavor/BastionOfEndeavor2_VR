@@ -55,8 +55,8 @@
 
 		if(C.player_age != initial(C.player_age) && isnum(C.player_age)) // database is on
 			var/age = C.player_age
+			/* Bastion of Endeavor Translation
 			switch(age)
-				/* Bastion of Endeavor Translation
 				if(0 to 1)
 					age = "<font color='#ff0000'><b>[age] days old</b></font>"
 				if(1 to 10)
@@ -64,8 +64,8 @@
 				else
 					entry += " - [age] days old"
 				*/
-				entry += " - Возраст: [count_ru(age, "день;дня;дней")]"
-				// End of Bastion of Endeavor Translation
+			entry += " - Возраст: [count_ru(age, "день;дня;дней")]"
+			// End of Bastion of Endeavor Translation
 
 		if(is_special_character(C.mob))
 			/* Bastion of Endeavor Translation

@@ -63,7 +63,7 @@
 		/* Bastion of Endeavor Translation
 		to_chat(usr, "<span class='notice'>Reverted ignore on <b>[key_to_unignore]</b>.</span>")
 		*/
-		to_chat(usr, "<span class='notice'>Сообщения <b>[key_to_ignore]</b> в OOC-чате и чате мёртвых теперь снова будут показываться.</span>")
+		to_chat(usr, "<span class='notice'>Сообщения <b>[key_to_unignore]</b> в OOC-чате и чате мёртвых теперь снова будут показываться.</span>")
 		// End of Bastion of Endeavor Translation
 
 /mob/proc/is_key_ignored(var/key_to_check)

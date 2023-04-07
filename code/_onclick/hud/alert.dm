@@ -81,7 +81,7 @@
 	/* Bastion of Endeavor Edit: We have a dmi with russian icons.
 	icon = 'icons/mob/screen_alert.dmi'
 	*/
-	icon = 'russian/icons/screen_alert_ru.dmi'
+	icon = 'russian/icons/mob/screen_alert_ru.dmi'
 	// End of Bastion of Endeavor Edit
 	icon_state = "default"
 	/* Bastion of Endeavor Translation

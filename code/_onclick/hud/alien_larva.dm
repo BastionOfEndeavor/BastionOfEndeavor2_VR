@@ -4,7 +4,7 @@
 	/* Bastion of Endeaovor Edit: Russian icons. Currently unchanged, but might be done later if need be.
 	HUD.ui_style = 'icons/mob/screen1_alien.dmi'
 	*/
-	HUD.ui_style = 'russian/icons/screen1_alien_ru.dmi'
+	HUD.ui_style = 'russian/icons/mob/screen1_alien_ru.dmi'
 	// End of Bastion of Endeavor Edit
 
 	HUD.adding = list()

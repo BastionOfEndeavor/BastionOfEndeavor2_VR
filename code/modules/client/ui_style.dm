@@ -65,8 +65,8 @@ var/global/list/all_tooltip_styles = list(
 	set category = "Preferences"
 	set desc = "Configure your user interface"
 	*/
-	set name = "Настройки интерфейса"
-	set category = "Настройки"
+	set name = "Интерфейс"
+	set category = "Предпочтения"
 	set desc = "Изменить оформление интерфейса"
 	// End of Bastion of Endeavor Translation
 

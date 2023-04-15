@@ -6,10 +6,11 @@
 #include "_cases_ru.dm"
 #include "_cases_repository_ru.dm"
 #include "_cases_revamped_ru.dm"
-#include "_client_cases_ru.dm"
 #include "_overridden_procs_ru.dm"
 #include "_verbs_ru.dm"
 #include "_buckling_ru.dm"
+#include "_lists_ru.dm"
+#include "_non_type_ru.dm"
 
 // Begin modular includes
 #include "defines\defines_ru.dm"

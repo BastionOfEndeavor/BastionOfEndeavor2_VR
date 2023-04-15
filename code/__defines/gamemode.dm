@@ -46,8 +46,8 @@
 #define BE_SURVIVOR		0x200000
 //VOREStation Add End
 
-// Bastion of Endeavor TODO: I forget if these can be safely changed, but I don't see the need to risk it until antag localization happens
 var/list/be_special_flags = list(
+	/* Bastion of Endeavor Translation
 	"Traitor"          = BE_TRAITOR,
 	"Operative"        = BE_OPERATIVE,
 	"Changeling"       = BE_CHANGELING,
@@ -72,6 +72,32 @@ var/list/be_special_flags = list(
 	"Cursed Sword"     = BE_CURSEDSWORD,
 	"Ship Survivor"	   = BE_SURVIVOR
 	//VOREStation Add End
+	*/
+	"Предвтель"      			    = BE_TRAITOR,
+	"Оперативник"    			    = BE_OPERATIVE,
+	"Генокрад"       				= BE_CHANGELING,
+	"Волшебник"      			    = BE_WIZARD,
+	"Неисправный ИИ" 		        = BE_MALF,
+	"Революционер"    				= BE_REV,
+	"Ксеноморф"        				= BE_ALIEN,
+	"Позитронный разум" 			= BE_AI,
+	"Культист"          			= BE_CULTIST,
+	"Отступник"         			= BE_RENEGADE,
+	"Ниндзя"            			= BE_NINJA,
+	"Налётчик"						= BE_RAIDER,
+	"Дионея"						= BE_PLANT,
+	"Мятежник"						= BE_MUTINEER,
+	"Лоялист"						= BE_LOYALIST,
+	"Персональный ИИ"             	= BE_PAI,
+	//VOREStation Add
+	"Потерявшийся дрон"       		= BE_LOSTDRONE,
+	"Техтоннельный хищник"      	= BE_MAINTPRED,
+	"Метаморф"						= BE_MORPH,
+	"Корги"							= BE_CORGI,
+	"Проклятый меч"     			= BE_CURSEDSWORD,
+	"Потерпевший крушение"			= BE_SURVIVOR
+	//VOREStation Add End
+	// End of Bastion of Endeavor Translation
 )
 
 

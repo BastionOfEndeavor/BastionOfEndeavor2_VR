@@ -62,3 +62,10 @@
 		if(ACASE) return "НИБ-НТ Адефагию"
 		if(ICASE) return "НИБ-НТ Адефагией"
 		if(PCASE) return "НИБ-НТ Адефагии"
+
+/proc/get_genders_ru(var/list/genders)
+	if(!islist(genders)) return
+	var/list/returning_list = list()
+	for(var/gender in genders)
+		returning_list += get_key_by_value(all_genders_define_list_ru, gender)
+	return returning_list

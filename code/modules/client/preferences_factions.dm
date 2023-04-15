@@ -15,6 +15,7 @@ var/global/list/seen_religions = list()
 
 // VOREStation Edits Start
 var/global/list/citizenship_choices = list(
+	/* Bastion of Endeavor Translation
 	"Greater Human Diaspora",
 	"Commonwealth of Sol-Procyon",
 	"Skrell Consensus",
@@ -27,9 +28,24 @@ var/global/list/citizenship_choices = list(
 	"Altevian Hegemony",
 	"Kitsuhana Heavy Industries",
 	"Kosaky Fleets"
+	*/
+	"Великая человеческая диаспора",
+	"Содружество Сол-Процион",
+	"Скрелльский консенсус",
+	"Могская гегемония",
+	"Таджарская диаспора",
+	"Унитарный альянс сальтанских фирдов",
+	"Колонии Элизия",
+	"Конфедерация Арес",
+	"Экспедиционный флот тешари",
+	"Альтевийская гегемония",
+	"Китсухана",
+	"Косакийский флот"
+	// End of Bastion of Endeavor Translation
 	)
 
 var/global/list/home_system_choices = list(
+	/* Bastion of Endeavor Translation
 	"Virgo-Erigone",
 	"Sol",
 	"Earth, Sol",
@@ -65,9 +81,47 @@ var/global/list/home_system_choices = list(
 	"Jorhul, Barkalis",
 	"Shelf Flotilla",
 	"Ue-Orsi Flotilla"
+	*/
+	"Вирго-Эригона",
+	"Кара, Вирго-Эригона",
+	"Сиф, Вирго-Эригона",
+	"Сол",
+	"Земля, Сол",
+	"Луна, Сол",
+	"Марс, Сол",
+	"Венера, Сол",
+	"Титан, Сол",
+	"Толедо, Нью-Огайо",
+	"Пакт, Мирия",
+	"Китсухана Прайм",
+	"Кишар, Альфа-Центавра",
+	"Аншар, Альфа-Центавра",
+	"Небесный комплекс, Альфа-Центавра",
+	"Процион",
+	"Альтаир",
+	"Бринкбёрн, Никс",
+	"Бинма, Тау Кита",
+	"Кверр'балак, Кверр'валис",
+	"Эпсилон Малой Медведицы",
+	"Мералар, Раркаджар",
+	"Тал, Вилос",
+	"Менхир, Алат-Хаар",
+	"Альтам, Ваззенд",
+	"Ух'зата, Келезаката",
+	"Мог, Уоя-Иса",
+	"Ксохок, Уоя-Иса",
+	"Варилак, Антарес",
+	"Санкторум, Санктум",
+	"Инфернум, Санктум",
+	"Изобилие Во Всём Умиротворённом, Бета-Корнелиум Вентрум",
+	"Джоршул, Баркалис",
+	"Флотилия Шельфа",
+	"Флотилия Уй-Орси"
+	// End of Bastion of Endeavor Translation
 	)
 
 var/global/list/faction_choices = list(
+	/* Bastion of Endeavor Translation
 	"NanoTrasen Incorporated",
 	"Hephaestus Industries",
 	"Vey-Medical",
@@ -99,18 +153,58 @@ var/global/list/faction_choices = list(
 	"Proxima Centauri Risk Control",
 	"HIVE Security",
 	"Stealth Assault Enterprises"
+	*/
+	"НаноТрейсен",
+	"Гефест",
+	"Вей-Мед",
+	"Дзен-Ху",
+	"Уорд-Такахаси",
+	"Бишоп",
+	"Морфей",
+	"Зион",
+	"Союз независимой торговли",
+	"Майор Билл",
+	"Айронкрест",
+	"Грейсон",
+	"Эфир",
+	"Точка Фокуса",
+	"СтарФлайт",
+	"Телерадиовещательная сеть Окулюм",
+	"Почта Периферии",
+	"Свободная трибуна Анур",
+	"Провизия Центавра",
+	"Эйнштейн",
+	"Вульф",
+	"Гилтари",
+	"Койот",
+	"Химера",
+	"Китсухана",
+	"Ассоциация независимых пилотов",
+	"Силы обороны локальной системы",
+	"Единые солнечные силы обороны",
+	"Контроль рисков Проксима-Центавра",
+	// "Служба безопасности ХАИВ", // even upstream doesnt know what this is so why bother
+	"Стелс Нападение и Извлечение" // this makes no sense but i'm out of ideas, for future reference this is the SAARE mercs lorewise
+	// End of Bastion of Endeavor Translation
 	)
 // VOREStation Edits Stop
 
 var/global/list/antag_faction_choices = list()	//Should be populated after brainstorming. Leaving as blank in case brainstorming does not occur.
 
 var/global/list/antag_visiblity_choices = list(
+	/* Bastion of Endeavor Translation
 	"Hidden",
 	"Shared",
 	"Known"
+	*/
+	"Скрыта",
+	"Видна союзникам",
+	"Известна"
+	// End of Bastion of Endeavor Translation
 	)
 
 var/global/list/religion_choices = list(
+	/* Bastion of Endeavor Translation
 	"Unitarianism",
 	"Neopaganism",
 	"Islam",
@@ -131,4 +225,26 @@ var/global/list/religion_choices = list(
 	"Deism",
 	"Neo-Moreauism",
 	"Orthodox Moreauism"
+	*/
+	"Унитаризм",
+	"Неоязычество",
+	"Ислам",
+	"Христианство",
+	"Иудаизм",
+	"Индуизм",
+	"Буддизм",
+	"Плеромаизм",
+	"Спектрализм",
+	"Факт-синтоизм",
+	"Национальная религия Кишара",
+	"Религия дальнобойщиков",
+	"Нок",
+	"Сингулярианство",
+	"Ксилар Квалл",
+	"Таджр-кий Раркаджар",
+	"Агностицизм",
+	"Деизм",
+	"Новый мороизм",
+	"Традиционный мороизм"
+	// End of Bastion of Endeavor Translation
 	)

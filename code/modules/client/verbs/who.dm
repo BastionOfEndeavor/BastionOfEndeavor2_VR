@@ -8,7 +8,7 @@
 	set name = "Кто онлайн"
 	set category = "OOC"
 	set desc = "Показать, кто сейчас подключён к серверу."
-
+	set hidden = TRUE // i don't see the point of this given that Advanced Who exists
 	var/msg = "<b>Игроки онлайн:</b>\n"
 	// End of Bastion of Endeavor Translation
 
@@ -79,7 +79,7 @@
 			/* Bastion of Endeavor Translation
 			entry += " (AFK - [round(seconds / 60)] minutes, [seconds % 60] seconds)"
 			*/
-			entry += " (АФК - [count_ru(round(seconds / 60), "минут;у;ы;")] minutes, [seconds % 60] seconds)"
+			entry += " (АФК - [count_ru(round(seconds / 60), "минут;у;ы;")], [count_ru(round(seconds % 60), "секунд;у;ы;")])"
 			// End of Bastion of Endeavor Translation
 
 		entry += " [ADMIN_QUE(C.mob)]"
@@ -93,8 +93,13 @@
 	to_chat(src,msg)
 
 /client/verb/staffwho()
+	/* Bastion of Endeavor Translation
 	set category = "Admin"
 	set name = "Staffwho"
+	*/
+	set category = "Администрация"
+	set name = "Кто администрирует"
+	// End of Bastion of Endeavor Translation
 
 	var/msg = ""
 	var/modmsg = ""
@@ -123,21 +128,42 @@
 			category = R_EVENT
 			num_event_managers_online++
 
+		/* Bastion of Endeavor Translation
 		temp += "\t[C] is a [C.holder.rank]"
+		*/
+		temp += "\t[C] — [C.holder.rank]"
+		// End of Bastion of Endeavor Translation
 		if(holder)
 			if(C.holder.fakekey)
+				/* Bastion of Endeavor Translation
 				temp += " <i>(as [C.holder.fakekey])</i>"
+				*/
+				temp += " <i>(as [C.holder.fakekey])</i>"
+				// End of Bastion of Endeavor Translation
 
+			/* Bastion of Endeavor Translation
 			if(isobserver(C.mob))
 				temp += " - Observing"
 			else if(istype(C.mob,/mob/new_player))
 				temp += " - Lobby"
 			else
 				temp += " - Playing"
+			*/
+			if(isobserver(C.mob))
+				temp += " - Наблюдает"
+			else if(istype(C.mob,/mob/new_player))
+				temp += " - В лобби"
+			else
+				temp += " - В игре"
+			// End of Bastion of Endeavor Translation
 
 			if(C.is_afk())
 				var/seconds = C.last_activity_seconds()
+				/* Bastion of Endeavor Translation
 				temp += " (AFK - [round(seconds / 60)] minutes, [seconds % 60] seconds)"
+				*/
+				temp += " (АФК - [count_ru(round(seconds / 60), "минут;у;ы;")], [count_ru(round(seconds % 60), "секунд;у;ы;")])"
+				// End of Bastion of Endeavor Translation
 		temp += "\n"
 		switch(category)
 			if(R_ADMIN)
@@ -149,39 +175,80 @@
 			if(R_EVENT)
 				eventMmsg += temp
 
+	/* Bastion of Endeavor Translation
 	msg = "<b>Current Admins ([num_admins_online]):</b>\n" + msg
+	*/
+	msg = "<b>Администраторы в сети ([num_admins_online]):</b>\n" + msg
+	// End of Bastion of Endeavor Translation
 
 	if(config.show_mods)
+		/* Bastion of Endeavor Translation
 		msg += "\n<b> Current Game Masters ([num_mods_online]):</b>\n" + modmsg
+		*/
+		msg += "\n<b> Игровые мастера ([num_mods_online]):</b>\n" + modmsg
+		// End of Bastion of Endeavor Translation
 
 	if(config.show_devs)
+		/* Bastion of Endeavor Translation
 		msg += "\n<b> Current Developers ([num_devs_online]):</b>\n" + devmsg
+		*/
+		msg += "\n<b> Разработчики ([num_devs_online]):</b>\n" + devmsg
+		// End of Bastion of Endeavor Translation
 
 	if(config.show_event_managers)
+		/* Bastion of Endeavor Translation
 		msg += "\n<b> Current Miscellaneous ([num_event_managers_online]):</b>\n" + eventMmsg
+		*/
+		msg += "\n<b> Прочий персонал ([num_event_managers_online]):</b>\n" + eventMmsg
+		// End of Bastion of Endeavor Translation
 
 	var/num_mentors_online = 0
 	var/mmsg = ""
 
 	for(var/client/C in GLOB.mentors)
 		num_mentors_online++
+		/* Bastion of Endeavor Translation
 		mmsg += "\t[C] is a Mentor"
+		*/
+		mmsg += "\t[C] — Ментор"
+		// End of Bastion of Endeavor Translation
 		if(holder)
+			/* Bastion of Endeavor Translation
 			if(isobserver(C.mob))
 				mmsg += " - Observing"
 			else if(istype(C.mob,/mob/new_player))
 				mmsg += " - Lobby"
 			else
 				mmsg += " - Playing"
+			*/
+			if(isobserver(C.mob))
+				mmsg += " - Наблюдает"
+			else if(istype(C.mob,/mob/new_player))
+				mmsg += " - В лобби"
+			else
+				mmsg += " - В игре"
+			// End of Bastion of Endeavor Translation
 
 			if(C.is_afk())
 				var/seconds = C.last_activity_seconds()
+				/* Bastion of Endeavor Translation
 				mmsg += " (AFK - [round(seconds / 60)] minutes, [seconds % 60] seconds)"
+				*/
+				mmsg += " (АФК - [count_ru(round(seconds / 60), "минут;у;ы")], [count_ru(round(seconds % 60), "секунд;у;ы")])"
+				// End of Bastion of Endeavor Translation
 		mmsg += "\n"
 
 	if(config.show_mentors)
+		/* Bastion of Endeavor Translation
 		msg += "\n<b> Current Mentors ([num_mentors_online]):</b>\n" + mmsg
+		*/
+		msg += "\n<b> Менторы в сети ([num_mentors_online]):</b>\n" + mmsg
+		// End of Bastion of Endeavor Translation
 
+	/* Bastion of Endeavor Translation
 	msg += "\n<span class='info'>Adminhelps are also sent to Discord. If no admins are available in game try anyway and an admin on Discord may see it and respond.</span>"
+	*/
+	msg += "\n<span class='info'>Запросы в Помощь администратора дублируются в Discord. Если в сети нет администраторов, Вы можете все равно оставить запрос, и кто-то из администраторов может увидеть его в Discord и ответить.</span>"
+	// End of Bastion of Endeavor Translation
 
 	to_chat(src,"<span class='filter_notice'>[jointext(msg, "<br>")]</span>")

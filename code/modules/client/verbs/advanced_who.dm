@@ -3,7 +3,7 @@
 	/* Bastion of Endeavor Translation
 	set name = "Advanced Who"
 	*/
-	set name = "Кто играет"
+	set name = "Список игроков"
 	set desc = "Показать, кто сейчас в лобби или в игре"
 	// End of Bastion of Endeavor Translation
 	set category = "OOC"
@@ -11,7 +11,7 @@
 	/* Bastion of Endeavor Translation
 	var/msg = "<b>Current Players:</b>\n"
 	*/
-	var/msg = "<b>Игроки онлайн:</b>\n"
+	var/msg = "<b>Игроки на сервере:</b>\n"
 	// End of Bastion of Endeavor Translation
 
 	var/list/Lines = list()
@@ -62,7 +62,7 @@
 				/* Bastion of Endeavor Translation: Bastion of Endeavor TODO: This is VERY VERY daring and I might wanna come back to make sure real_names are working with cases
 				entry += " as [C.mob.real_name]"
 				*/
-				entry += " за [pcase_ru(C.mob, secondary = "real_name")]"
+				entry += " за [acase_ru(C.mob, secondary = "real_name")]"
 				// End of Bastion of Endeavor Translation
 
 			else if(isnewplayer(C.mob))

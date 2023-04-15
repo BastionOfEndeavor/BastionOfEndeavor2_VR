@@ -27,10 +27,17 @@
 		return
 
 	#if defined(TOPIC_DEBUGGING)
+	/* Bastion of Endeavor Translation
 	to_world("[src]'s Topic: [href] destined for [hsrc].")
 
 	if(href_list["nano_err"]) //nano throwing errors
 		to_world("## NanoUI, Subject [src]: " + html_decode(href_list["nano_err")]) //NANO DEBUG HOOK
+	*/
+	to_world("Topic для клиента [src]: [href] предназначается для [hsrc].")
+
+	if(href_list["nano_err"]) //nano throwing errors
+		to_world("## NanoUI, субъект [src]: " + html_decode(href_list["nano_err")]) //NANO DEBUG HOOK
+	// End of Bastion of Endeavor Translation
 
 	#endif
 
@@ -42,10 +49,17 @@
 			return
 
 	//search the href for script injection
+	/* Bastion of Endeavor Translation
 	if( findtext(href,"<script",1,0) )
 		to_world_log("Attempted use of scripts within a topic call, by [src]")
 		message_admins("Attempted use of scripts within a topic call, by [src]")
 		return
+	*/
+	if(findtext_char(href,"<script",1,0) )
+		to_world_log("Попытка использовать скрипт в вызове Topic от [src]")
+		message_admins("Попытка использовать скрипт в вызове Topic от [src]")
+		return
+	// End of Bastion of Endeavor Translation
 
 	// Tgui Topic middleware
 	if(!tgui_Topic(href_list))
@@ -70,10 +84,18 @@
 
 	if(href_list["irc_msg"])
 		if(!holder && received_irc_pm < world.time - 6000) //Worse they can do is spam IRC for 10 minutes
+			/* Bastion of Endeavor Translation
 			to_chat(usr, "<span class='warning'>You are no longer able to use this, it's been more than 10 minutes since an admin on IRC has responded to you</span>")
+			*/
+			to_chat(usr, "<span class='warning'>Вы больше не можете использовать это, так как прошло 10 минут с ответа администратора.</span>")
+			// End of Bastion of Endeavor Translation
 			return
 		if(mute_irc)
+			/* Bastion of Endeavor Translation
 			to_chat(usr, "<span class='warning'You cannot use this as your client has been muted from sending messages to the admins on IRC</span>")
+			*/
+			to_chat(usr, "<span class='warning'>Вы не можете использовать это, так как Вашему клиенту запрещено отправлять сообщения в IRC администраторам.</span>")
+			// End of Bastion of Endeavor Translation
 			return
 		send2adminirc(href_list["irc_msg"])
 		return
@@ -90,27 +112,47 @@
 				GLOB.pending_discord_registrations -= list(L)
 				var/time = L["time"]
 				if((world.realtime - time) > 10 MINUTES)
+					/* Bastion of Endeavor Translation
 					to_chat(src, "<span class='warning'>Sorry, that link has expired. Please request another on Discord.</span>")
+					*/
+					to_chat(src, "<span class='warning'>Данная ссылка уже не действительна. Пожалуйста, запросите новую.</span>")
+					// End of Bastion of Endeavor Translation
 					return
 				sane = TRUE
 				break
 
 		if(!sane)
+			/* Bastion of Endeavor Translation
 			to_chat(src, "<span class='warning'>Sorry, that link doesn't appear to be valid. Please try again.</span>")
+			*/
+			to_chat(src, "<span class='warning'>Эта ссылка недействительна. Попробуйте ещё раз.</span>")
+			// End of Bastion of Endeavor Translation
 			return
 
 		var/sql_discord = sql_sanitize_text(their_id)
 		var/sql_ckey = sql_sanitize_text(ckey)
 		var/DBQuery/query = dbcon.NewQuery("UPDATE erro_player SET discord_id = '[sql_discord]' WHERE ckey = '[sql_ckey]'")
 		if(query.Execute())
+			/* Bastion of Endeavor Translation
 			to_chat(src, "<span class='notice'>Registration complete! Thank you for taking the time to register your Discord ID.</span>")
 			log_and_message_admins("[ckey] has registered their Discord ID to obtain the Crew Member role. Their Discord snowflake ID is: [their_id]")
 			admin_chat_message(message = "[ckey] has registered their Discord ID to obtain the Crew Member role. Their Discord is: <@[their_id]>", color = "#4eff22")
 			notes_add(ckey, "Discord ID: [their_id]")
+			*/
+			to_chat(src, "<span class='notice'>Регистрация завершена! Спасибо, что привязали свой тег в Discord.</span>")
+			log_and_message_admins("[ckey] зарегистрировал свой тег в Discord для получения роли Экипажа. Его уникальный ID: [their_id]")
+			admin_chat_message(message = "[ckey] зарегистрировал свой тег в Discord для получения роли Экипажа. Его уникальный ID: <@[their_id]>", color = "#4eff22")
+			notes_add(ckey, "Тег в Discord: [their_id]")
+			// End of Bastion of Endeavor Translation
 			world.VgsAddMemberRole(their_id)
 		else
+			/* Bastion of Endeavor Translation
 			to_chat(src, "<span class='warning'>There was an error registering your Discord ID in the database. Contact an administrator.</span>")
 			log_and_message_admins("[ckey] failed to register their Discord ID. Their Discord snowflake ID is: [their_id]. Is the database connected?")
+			*/
+			to_chat(src, "<span class='warning'>Не удалось зарегистрировать Ваш тег в базе данных. Свяжитесь с администратором.</span>")
+			log_and_message_admins("[ckey] не смог зарегистрировать свой тег в Discord. Его уникальный ID: [their_id]. База данных подключена?")
+			// End of Bastion of Endeavor Translation
 		return
 	//VOREStation Add End
 
@@ -120,7 +162,11 @@
 
 	//byond bug ID:2256651
 	if (asset_cache_job && (asset_cache_job in completed_asset_jobs))
+		/* Bastion of Endeavor Translation
 		to_chat(src, "<span class='danger'>An error has been detected in how your client is receiving resources. Attempting to correct.... (If you keep seeing these messages you might want to close byond and reconnect)</span>")
+		*/
+		to_chat(src, "<span class='danger'>Зафиксирована ошибка в получении ресурсов Вашим клиентом. Устанавливаем соединение... (Если это сообщение появляется несколько раз, перезайдите в BYOND)</span>")
+		// End of Bastion of Endeavor Translation
 		src << browse("...", "window=asset_cache_browser")
 		return
 	if (href_list["asset_cache_preload_data"])
@@ -144,7 +190,11 @@
 //This stops files larger than UPLOAD_LIMIT being sent from client to server via input(), client.Import() etc.
 /client/AllowUpload(filename, filelength)
 	if(filelength > UPLOAD_LIMIT)
+		/* Bastion of Endeavor Translation
 		to_chat(src, "<font color='red'>Error: AllowUpload(): File Upload too large. Upload Limit: [UPLOAD_LIMIT/1024]KiB.</font>")
+		*/
+		to_chat(src, "<font color='red'>Ошибка: AllowUpload(): Файл слишком большой. Лимит: [UPLOAD_LIMIT/1024] КБ.</font>")
+		// End of Bastion of Endeavor Translation
 		return 0
 /*	//Don't need this at the moment. But it's here if it's needed later.
 	//Helps prevent multiple files being uploaded at once. Or right after eachother.
@@ -168,7 +218,11 @@
 		return null
 
 	if(!config.guests_allowed && IsGuestKey(key))
+		/* Bastion of Endeavor Translation
 		alert(src,"This server doesn't allow guest accounts to play. Please go to http://www.byond.com/ and register for a key.","Guest") // Not tgui_alert
+		*/
+		alert(src,"Этот сервер не допускает игру за гостевые аккаунты. Пожалуйста, зарегистрируйтесь на сайте http://www.byond.com/.","Гость") // Not tgui_alert
+		// End of Bastion of Endeavor Translation
 		del(src)
 		return
 
@@ -179,7 +233,11 @@
 
 	//Only show this if they are put into a new_player mob. Otherwise, "what title screen?"
 	if(isnewplayer(src.mob))
+		/* Bastion of Endeavor Translation
 		to_chat(src, "<font color='red'>If the title screen is black, resources are still downloading. Please be patient until the title screen appears.</font>")
+		*/
+		to_chat(src, "<font color='red'>Если окно лобби чёрное, то ресурсы ещё в процессе загрузки. Дождитесь появления окна лобби.</font>")
+		// End of Bastion of Endeavor Translation
 
 	GLOB.clients += src
 	GLOB.directory[ckey] = src
@@ -218,13 +276,22 @@
 	connection_timeofday = world.timeofday
 
 	if(custom_event_msg && custom_event_msg != "")
+		/* Bastion of Endeavor Translation
 		to_chat(src, "<h1 class='alert'>Custom Event</h1>")
 		to_chat(src, "<h2 class='alert'>A custom event is taking place. OOC Info:</h2>")
+		*/
+		to_chat(src, "<h1 class='alert'>Особый эвент</h1>")
+		to_chat(src, "<h2 class='alert'>На станции происходит особый эвент. Информация OOC:</h2>")
+		// End of Bastion of Endeavor Translation
 		to_chat(src, "<span class='alert'>[custom_event_msg]</span>")
 		to_chat(src, "<br>")
 
 	if(!winexists(src, "asset_cache_browser")) // The client is using a custom skin, tell them.
+		/* Bastion of Endeavor Translation
 		to_chat(src, "<span class='warning'>Unable to access asset cache browser, if you are using a custom skin file, please allow DS to download the updated version, if you are not, then make a bug report. This is not a critical issue but can cause issues with resource downloading, as it is impossible to know when extra resources arrived to you.</span>")
+		*/
+		to_chat(src, "<span class='warning'>Не удалось подключиться к браузера кэша ассетов. Если Вы используете самодельный скин, то разрешите DreamSeeker загрузить новый, если нет — доложите администраторам. Это не критическая ошибка, но приводит к огромным проблемам с прогрузкой ресурсов.</span>")
+		// End of Bastion of Endeavor Translation
 
 	if(holder)
 		add_admin_verbs()
@@ -247,7 +314,11 @@
 	screen += void
 
 	if((prefs.lastchangelog != changelog_hash) && isnewplayer(src.mob)) //bolds the changelog button on the interface so we know there are updates.
+		/* Bastion of Endeavor Translation
 		to_chat(src, "<span class='info'>You have unread updates in the changelog.</span>")
+		*/
+		to_chat(src, "<span class='info'>В списке изменений есть непрочитанные Вами записи.</span>")
+		// End of Bastion of Endeavor Translation
 		winset(src, "rpane.changelog", "background-color=#eaeaea;font-style=bold")
 		if(config.aggressive_changelog)
 			src.changes()
@@ -255,10 +326,18 @@
 	if(config.paranoia_logging)
 		var/alert = FALSE //VOREStation Edit start.
 		if(isnum(player_age) && player_age == 0)
+			/* Bastion of Endeavor Translation
 			log_and_message_admins("PARANOIA: [key_name(src)] has connected here for the first time.")
+			*/
+			log_and_message_admins("ПАРАНОЙЯ: [key_name(src)] подключается впервые.")
+			// End of Bastion of Endeavor Translation
 			alert = TRUE
 		if(isnum(account_age) && account_age <= 2)
+			/* Bastion of Endeavor Translation
 			log_and_message_admins("PARANOIA: [key_name(src)] has a very new BYOND account ([account_age] days).")
+			*/
+			log_and_message_admins("ПАРАНОЙЯ: [key_name(src)] подключается со свежим аккаунтом BYOND ([count_ru(account_age, ";день;дня;дней")]).")
+			// End of Bastion of Endeavor Translation
 			alert = TRUE
 		if(alert)
 			for(var/client/X in GLOB.admins)
@@ -367,30 +446,56 @@
 	//Panic bunker code
 	if (isnum(player_age) && player_age == 0) //first connection
 		if (config.panic_bunker && !holder && !deadmin_holder)
+			/* Bastion of Endeavor Translation
 			log_adminwarn("Failed Login: [key] - New account attempting to connect during panic bunker")
 			message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect during panic bunker</span>")
 			disconnect_with_message("Sorry but the server is currently not accepting connections from never before seen players.")
+			*/
+			log_adminwarn("Неудачный заход: [key] - новый аккаунт попытался подключиться в течение бункера.")
+			message_admins("<span class='adminnotice'>Неудачный заход: [key] - новый аккаунт попытался подключиться в течение бункера.</span>")
+			disconnect_with_message("Извините, но сервер на данный момент не впускает новых игроков.")
+			// End of Bastion of Endeavor Translation
 			return 0
 
 	// IP Reputation Check
 	if(config.ip_reputation)
 		if(config.ipr_allow_existing && player_age >= config.ipr_minimum_age)
+			/* Bastion of Endeavor Translation
 			log_admin("Skipping IP reputation check on [key] with [address] because of player age")
+			*/
+			log_admin("Пропускаем проверку репутации IP игрока [key] по адресу [address] по причине возраста аккаунта.")
+			// End of Bastion of Endeavor Translation
 		else if(update_ip_reputation()) //It is set now
 			if(ip_reputation >= config.ipr_bad_score) //It's bad
 
 				//Log it
 				if(config.paranoia_logging) //We don't block, but we want paranoia log messages
+					/* Bastion of Endeavor Translation
 					log_and_message_admins("[key] at [address] has bad IP reputation: [ip_reputation]. Will be kicked if enabled in config.")
+					*/
+					log_and_message_admins("[key] по адресу [address] обладает плохой репутацией IP: [ip_reputation] и будет кикнут, если это включено в конфигурации.")
+					// End of Bastion of Endeavor Translation
 				else //We just log it
+					/* Bastion of Endeavor Translation
 					log_admin("[key] at [address] has bad IP reputation: [ip_reputation]. Will be kicked if enabled in config.")
+					*/
+					log_admin("[key] по адресу [address] обладает плохой репутацией IP: [ip_reputation] и будет кикнут, если это включено в конфигурации.")
+					// End of Bastion of Endeavor Translation
 
 				//Take action if required
 				if(config.ipr_block_bad_ips && config.ipr_allow_existing) //We allow players of an age, but you don't meet it
+					/* Bastion of Endeavor Translation
 					disconnect_with_message("Sorry, we only allow VPN/Proxy/Tor usage for players who have spent at least [config.ipr_minimum_age] days on the server. If you are unable to use the internet without your VPN/Proxy/Tor, please contact an admin out-of-game to let them know so we can accommodate this.")
+					*/
+					disconnect_with_message("Извините, но сервер допускает использование VPN/прокси/Tor только для тех игроков, которые провели [count_ru(config.ipr_minimum_age, ";день;дня;дней")] на сервере. Если у Вас нет иной возможности подключиться к серверу, сообщите об этом администратору вне игры.")
+					// End of Bastion of Endeavor Translation
 					return 0
 				else if(config.ipr_block_bad_ips) //We don't allow players of any particular age
+					/* Bastion of Endeavor Translation
 					disconnect_with_message("Sorry, we do not accept connections from users via VPN/Proxy/Tor connections. If you believe this is in error, contact an admin out-of-game.")
+					*/
+					disconnect_with_message("Извините, но сервер не допускает подключение через VPN/прокси/Tor. Если Вы считаете, что это ошибка, сообщите администратору вне игры.")
+					// End of Bastion of Endeavor Translation
 					return 0
 		else
 			log_admin("Couldn't perform IP check on [key] with [address]")
@@ -403,8 +508,13 @@
 			play_hours[query_hours.item[1]] = text2num(query_hours.item[3])
 	else
 		var/error_message = query_hours.ErrorMsg() // Need this out here since the spawn below will split the stack and who knows what'll happen by the time it runs
+		/* Bastion of Endeavor Translation
 		log_debug("Error loading play hours for [ckey]: [error_message]")
 		tgui_alert_async(src, "The query to load your existing playtime failed. Screenshot this, give the screenshot to a developer, and reconnect, otherwise you may lose any recorded play hours (which may limit access to jobs). ERROR: [error_message]", "PROBLEMS!!")
+		*/
+		log_debug("Ошибка при загрузке часов игры [ckey]: [error_message]")
+		tgui_alert_async(src, "Запрос на получение отыгранных Вами часов не удался. Сделайте скриншот этой ошибки и сообщите администратору, после чего переподключитесь, иначе Вы можете потерять отыгранные часы. Ошибка: [error_message]", "ПРОБЛЕМА!!")
+		// End of Bastion of Endeavor Translation
 	// VOREStation Edit End - Department Hours
 
 	if(sql_id)
@@ -461,15 +571,24 @@
 	return 0
 
 /client/verb/character_setup()
+	/* Bastion of Endeavor Translation
 	set name = "Character Setup"
 	set category = "Preferences"
+	*/
+	set name = "Редактор персонажа"
+	set category = "Предпочтения"
+	// End of Bastion of Endeavor Translation
 	if(prefs)
 		prefs.ShowChoices(usr)
 
 /client/proc/findJoinDate()
 	var/list/http = world.Export("http://byond.com/members/[ckey]?format=text")
 	if(!http)
+		/* Bastion of Endeavor Translation
 		log_world("Failed to connect to byond age check for [ckey]")
+		*/
+		log_world("Не удалось установить подключение для проверки возраста аккаунта BYOND игрока [ckey].")
+		// End of Bastion of Endeavor Translation
 		return
 	var/F = file2text(http["CONTENT"])
 	if(F)
@@ -477,7 +596,11 @@
 		if(R.Find(F))
 			. = R.group[1]
 		else
+			/* Bastion of Endeavor Translation
 			CRASH("Age check regex failed for [src.ckey]")
+			*/
+			CRASH("Не удалось применить регулярное выражение при проверке возраста аккаунта игрока [src.ckey].")
+			// End of Bastion of Endeavor Translation
 
 /client/vv_edit_var(var_name, var_value)
 	if(var_name == NAMEOF(src, holder))
@@ -485,18 +608,30 @@
 	return ..()
 
 /client/verb/reload_vchat()
+	/* Bastion of Endeavor Translation
 	set name = "Reload VChat"
+	*/
+	set name = "Перезагрузить VChat"
+	// End of Bastion of Endeavor Translation
 	set category = "OOC"
 
 	//Timing
 	if(src.chatOutputLoadedAt > (world.time - 10 SECONDS))
+		/* Bastion of Endeavor Translation
 		tgui_alert_async(src, "You can only try to reload VChat every 10 seconds at most.")
+		*/
+		tgui_alert_async(src, "Перезагружать VChat можно раз в 10 секунд.")
+		// End of Bastion of Endeavor Translation
 		return
 
 	verbs -= /client/proc/vchat_export_log
 
 	//Log, disable
+	/* Bastion of Endeavor Translation
 	log_debug("[key_name(src)] reloaded VChat.")
+	*/
+	log_debug("Игрок [key_name(src)] перезагрузил VChat.")
+	// End of Bastion of Endeavor Translation
 	winset(src, null, "outputwindow.htmloutput.is-visible=false;outputwindow.oldoutput.is-visible=false;outputwindow.chatloadlabel.is-visible=true")
 
 	//The hard way
@@ -567,8 +702,13 @@
 		ip_reputation = score
 		return TRUE
 
+/* Bastion of Endeavor Translation
 /client/proc/disconnect_with_message(var/message = "You have been intentionally disconnected by the server.<br>This may be for security or administrative reasons.")
 	message = "<head><title>You Have Been Disconnected</title></head><body><hr><center><b>[message]</b></center><hr><br>If you feel this is in error, you can contact an administrator out-of-game (for example, on Discord).</body>"
+*/
+/client/proc/disconnect_with_message(var/message = "Вы были целенаправленно отключены от сервера.<br>На это могут быть административные причины.")
+	message = "<head><title>Вы были отключены от сервера</title></head><body><hr><center><b>[message]</b></center><hr><br>Если Вы считаете, что это ошибка, свяжитесь с администратором вне игры.</body>"
+// End of Bastion of Endeavor Translation
 	window_flash(src)
 	src << browse(message,"window=dropmessage;size=480x360;can_close=1")
 	qdel(src)
@@ -586,7 +726,11 @@
 	return // stub
 
 /client/verb/toggle_fullscreen()
+	/* Bastion of Endeavor Translation
 	set name = "Toggle Fullscreen"
+	*/
+	set name = "Полноэкранный режим"
+	// End of Bastion of Endeavor Translation
 	set category = "OOC"
 
 	fullscreen = !fullscreen

@@ -1,6 +1,10 @@
 // Define a place to save appearance in character setup
 /datum/preferences
+	/* Bastion of Endeavor Translation
 	var/vore_egg_type = "Egg" //The egg type they have.
+	*/
+	var/vore_egg_type = "Яйцо"
+	// End of Bastion of Endeavor Translation
 
 // Definition of the stuff for the egg type.
 /datum/category_item/player_setup_item/vore/egg
@@ -20,8 +24,12 @@
 	character.vore_egg_type	= pref.vore_egg_type
 
 /datum/category_item/player_setup_item/vore/egg/content(var/mob/user)
+	/* Bastion of Endeavor Translation
 	. += "<br>"
 	. += " Egg Type: <a href='?src=\ref[src];vore_egg_type=1'>[pref.vore_egg_type]</a><br>"
+	*/
+	. += "Вид яйца: <a href='?src=\ref[src];vore_egg_type=1'>[pref.vore_egg_type]</a><br>"
+	// End of Bastion of Endeavor Translation
 
 /datum/category_item/player_setup_item/vore/egg/OnTopic(var/href, var/list/href_list, var/mob/user)
 	if(!CanUseTopic(user))
@@ -29,7 +37,11 @@
 
 	else if(href_list["vore_egg_type"])
 		var/list/vore_egg_types = global_vore_egg_types
+		/* Bastion of Endeavor Translation
 		var/selection = tgui_input_list(user, "Choose your character's egg type:", "Character Preference", vore_egg_types, pref.vore_egg_type)
+		*/
+		var/selection = tgui_input_list(user, "Выберите вид яйца, откладываемого Вашим персонажем (если применимо):", "Вид яйца", vore_egg_types, pref.vore_egg_type)
+		// End of Bastion of Endeavor Translation
 		if(selection)
 			pref.vore_egg_type = selection
 			return TOPIC_REFRESH

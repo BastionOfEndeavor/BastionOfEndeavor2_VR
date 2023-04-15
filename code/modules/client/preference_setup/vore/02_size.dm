@@ -97,6 +97,7 @@
 	character.custom_speech_bubble = pref.custom_speech_bubble
 
 /datum/category_item/player_setup_item/vore/size/content(var/mob/user)
+	/* Bastion of Endeavor Translation
 	. += "<br>"
 	. += "<b>Scale:</b> <a href='?src=\ref[src];size_multiplier=1'>[round(pref.size_multiplier*100)]%</a><br>"
 	. += "<b>Scaled Appearance:</b> <a [pref.fuzzy ? "" : ""] href='?src=\ref[src];toggle_fuzzy=1'><b>[pref.fuzzy ? "Fuzzy" : "Sharp"]</b></a><br>"
@@ -108,13 +109,33 @@
 	. += "<b>Relative Weight:</b>  <a href='?src=\ref[src];weight=1'>[pref.weight_vr]</a><br>"
 	. += "<b>Weight Gain Rate:</b> <a href='?src=\ref[src];weight_gain=1'>[pref.weight_gain]</a><br>"
 	. += "<b>Weight Loss Rate:</b> <a href='?src=\ref[src];weight_loss=1'>[pref.weight_loss]</a><br>"
+	*/
+	. += "<b>Размер:</b> <a href='?src=\ref[src];size_multiplier=1'>[round(pref.size_multiplier*100)]%</a><br>"
+	. += "<b>Масштабирование:</b> <a [pref.fuzzy ? "" : ""] href='?src=\ref[src];toggle_fuzzy=1'><b>[pref.fuzzy ? "Размытое" : "Резкое"]</b></a><br>"
+	. += "<b>Частота голоса:</b> <a href='?src=\ref[src];voice_freq=1'>[pref.voice_freq]</a><br>"
+	. += "<b>Звук голоса:</b> <a href='?src=\ref[src];voice_sounds_list=1'>[get_key_by_value(possible_voice_types_ru, pref.voice_sound)]</a><br>"
+	. += "<a href='?src=\ref[src];voice_test=1'><b>Прослушать голос</b></a><br>"
+	. += "<b>Облачко речи:</b> <a href='?src=\ref[src];customize_speech_bubble=1'>[get_key_by_value(selectable_speech_bubbles_ru, pref.custom_speech_bubble)]</a><br>"
+	. += "<br>"
+	. += "<b>Относительный вес:</b>  <a href='?src=\ref[src];weight=1'>[pref.weight_vr]</a><br>"
+	. += "<b>Скорость обретения веса:</b> <a href='?src=\ref[src];weight_gain=1'>[pref.weight_gain]</a><br>"
+	. += "<b>Скорость потери веса:</b> <a href='?src=\ref[src];weight_loss=1'>[pref.weight_loss]</a><br>"
+	// End of Bastion of Endeavor Translation
 
 /datum/category_item/player_setup_item/vore/size/OnTopic(var/href, var/list/href_list, var/mob/user)
 	if(href_list["size_multiplier"])
+		/* Bastion of Endeavor Translation
 		var/new_size = tgui_input_number(user, "Choose your character's size, ranging from 25% to 200%", "Set Size", null, 200, 25)
+		*/
+		var/new_size = tgui_input_number(user, "Укажите размер Вашего персонажа от 25% до 200%", "Размер персонажа", null, 200, 25)
+		// End of Bastion of Endeavor Translation
 		if (!ISINRANGE(new_size,25,200))
 			pref.size_multiplier = 1
+			/* Bastion of Endeavor Translation
 			to_chat(user, "<span class='notice'>Invalid size.</span>")
+			*/
+			to_chat(user, "<span class='notice'>Недопустимый размер.</span>")
+			// End of Bastion of Endeavor Translation
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 		else if(new_size)
 			pref.size_multiplier = (new_size/100)
@@ -125,6 +146,7 @@
 		return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["weight"])
+		/* Bastion of Endeavor Translation: We don't use pounds here
 		var/new_weight = tgui_input_number(user, "Choose your character's relative body weight.\n\
 			This measurement should be set relative to a normal 5'10'' person's body and not the actual size of your character.\n\
 			If you set your weight to 500 because you're a naga or have metal implants then complain that you're a blob I\n\
@@ -138,28 +160,57 @@
 				new_weight = round(2.20462*text2num(new_weight),4)
 			pref.weight_vr = sanitize_integer(new_weight, WEIGHT_MIN, WEIGHT_MAX, pref.weight_vr)
 			return TOPIC_REFRESH
+		*/
+		var/new_weight = tgui_input_number(user, "Выберите относительный вес Вашего персонажа.\n\
+			Это значение устанавливает, насколько выше или ниже вес Вашего персонажа относительно среднего при его росте.\n\
+			Оставьте значение по умолчанию, если Ваш персонаж среднего телосложения для своего роста.\n\
+			([WEIGHT_MIN]-[WEIGHT_MAX])", "Относительный вес", null, WEIGHT_MAX, WEIGHT_MIN)
+		if(new_weight)
+			new_weight = round(2.20462*text2num(new_weight),4)
+			pref.weight_vr = sanitize_integer(new_weight, WEIGHT_MIN, WEIGHT_MAX, pref.weight_vr)
+			return TOPIC_REFRESH
+		// End of Bastion of Endeavor Translation
 
 	else if(href_list["weight_gain"])
+		/* Bastion of Endeavor Translation
 		var/weight_gain_rate = tgui_input_number(user, "Choose your character's rate of weight gain between 100% \
 			(full realism body fat gain) and 0% (no body fat gain).\n\
 			(If you want to disable weight gain, set this to 0.01 to round it to 0%.)\
 			([WEIGHT_CHANGE_MIN]-[WEIGHT_CHANGE_MAX])", "Character Preference", pref.weight_gain)
+		*/
+		var/weight_gain_rate = tgui_input_number(user, "Укажите скорость обретения веса Вашим персонажем от 100% \
+			(нормальная скорость) до 0% (не набирает вес).\n\
+			(если хотите отключить обретение веса, 0.01 округляется до 0%.)\
+			([WEIGHT_CHANGE_MIN]-[WEIGHT_CHANGE_MAX])", "Character Preference", pref.weight_gain)
+		// End of Bastion of Endeavor Translation
 		if(weight_gain_rate)
 			pref.weight_gain = round(text2num(weight_gain_rate),1)
 			return TOPIC_REFRESH
 
 	else if(href_list["weight_loss"])
+		/* Bastion of Endeavor Translation
 		var/weight_loss_rate = tgui_input_number(user, "Choose your character's rate of weight loss between 100% \
 			(full realism body fat loss) and 0% (no body fat loss).\n\
 			(If you want to disable weight loss, set this to 0.01 round it to 0%.)\
 			([WEIGHT_CHANGE_MIN]-[WEIGHT_CHANGE_MAX])", "Character Preference", pref.weight_loss)
+		*/
+		var/weight_loss_rate = tgui_input_number(user, "Укажите скорость потери веса Вашим персонажем от 100% \
+			(нормальная скорость) до 0% (не теряет вес).\n\
+			(если хотите отключить потерю веса, 0.01 округляется до 0%.)\
+			([WEIGHT_CHANGE_MIN]-[WEIGHT_CHANGE_MAX])", "Потеря веса", pref.weight_loss)
+		// End of Bastion of Endeavor Translation
 		if(weight_loss_rate)
 			pref.weight_loss = round(text2num(weight_loss_rate),1)
 			return TOPIC_REFRESH
 
 	else if(href_list["voice_freq"])
+		/* Bastion of Endeavor Translation
 		var/list/preset_voice_freqs = list("high" = MAX_VOICE_FREQ, "middle-high" = 56250, "middle" = 42500, "middle-low"= 28750, "low" = MIN_VOICE_FREQ, "custom" = 1, "random" = 0)
 		var/choice = tgui_input_list(usr, "What would you like to set your voice frequency to? ([MIN_VOICE_FREQ] - [MAX_VOICE_FREQ])", "Voice Frequency", preset_voice_freqs)
+		*/
+		var/list/preset_voice_freqs = list("Высокая" = MAX_VOICE_FREQ, "Средне-высокая" = 56250, "Средняя" = 42500, "Средне-низкая"= 28750, "Низкая" = MIN_VOICE_FREQ, "Другая" = 1, "Случайная" = 0)
+		var/choice = tgui_input_list(usr, "Укажите частоту голоса Вашего персонажа:", "Частота голоса", preset_voice_freqs)
+		// End of Bastion of Endeavor Translation
 		if(!choice)
 			return
 		choice = preset_voice_freqs[choice]
@@ -167,7 +218,11 @@
 			pref.voice_freq = choice
 			return TOPIC_REFRESH
 		else if(choice == 1)
+			/* Bastion of Endeavor Translation
 			choice = tgui_input_number(user, "Choose your character's voice frequency, ranging from [MIN_VOICE_FREQ] to [MAX_VOICE_FREQ]", "Custom Voice Frequency", null, MAX_VOICE_FREQ, MIN_VOICE_FREQ, round_value = TRUE)
+			*/
+			choice = tgui_input_number(user, "Укажите частоту голоса Вашего персонажа от [MIN_VOICE_FREQ] до [MAX_VOICE_FREQ]", "Частота голоса", null, MAX_VOICE_FREQ, MIN_VOICE_FREQ, round_value = TRUE)
+			// End of Bastion of Endeavor Translation
 		if(choice > MAX_VOICE_FREQ)
 			choice = MAX_VOICE_FREQ
 		else if(choice < MIN_VOICE_FREQ)
@@ -176,6 +231,7 @@
 		pref.voice_freq = choice
 		return TOPIC_REFRESH
 	else if(href_list["voice_sounds_list"])
+		/* Bastion of Endeavor Translation: Axed the original list because we handle things a bit better
 		var/list/possible_voice_types = list(
 			"beep-boop",
 			"goon speak 1",
@@ -197,13 +253,30 @@
 		else
 			pref.voice_sound = choice
 		return TOPIC_REFRESH
+		*/
+		var/choice = tgui_input_list(usr, "Укажите набор звуков, используемый для речи Вашего персонажа:", "Голос персонажа", possible_voice_types_ru)
+		if(!choice)
+			pref.voice_sound = possible_voice_types_ru["Бип-буп"]
+		else
+			pref.voice_sound = possible_voice_types_ru[choice]
+		return TOPIC_REFRESH
+		// End of Bastion of Endeavor Translation
 	else if(href_list["customize_speech_bubble"])
+		/* Bastion of Endeavor Translation: I mean, not future-proof, but if it works it works?
 		var/choice = tgui_input_list(usr, "What speech bubble style do you want to use? (default for automatic selection)", "Custom Speech Bubble", selectable_speech_bubbles)
 		if(!choice)
 			pref.custom_speech_bubble = "default"
 		else
 			pref.custom_speech_bubble = choice
 		return TOPIC_REFRESH
+		*/
+		var/choice = tgui_input_list(usr, "Какое облачко Вы хотели бы использовать для речи персонажа?", "Облачко речи", selectable_speech_bubbles_ru)
+		if(!choice)
+			pref.custom_speech_bubble = "default"
+		else
+			pref.custom_speech_bubble = selectable_speech_bubbles_ru[choice]
+		return TOPIC_REFRESH
+		// End of Bastion of Endeavor Translation
 
 	else if(href_list["voice_test"])
 		var/sound/S

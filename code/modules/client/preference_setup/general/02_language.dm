@@ -10,7 +10,11 @@
 	S["language"]			>> pref.alternate_languages
 	S["extra_languages"]	>> pref.extra_languages
 	if(islist(pref.alternate_languages))			// Because aparently it may not be?
+		/* Bastion of Endeavor Translation: Bastion of Endeavor TODO: Can't say I like having the english_list there but we shall see? Why does this log every save/load anyway?
 		testing("LANGSANI: Loaded from [pref.client]'s character [pref.real_name || "-name not yet loaded-"] savefile: [english_list(pref.alternate_languages || list())]")
+		*/
+		testing("ЯЗЫКИ: Загружен персонаж [pref.client] ([pref.real_name || "-имя не прогружено-"]): [english_list(pref.alternate_languages || list(), nothing_text = "языков нет")].")
+		// End of Bastion of Endeavor Translation
 	S["language_prefixes"]	>> pref.language_prefixes
 	S["language_custom_keys"]	>> pref.language_custom_keys
 
@@ -18,29 +22,49 @@
 	S["language"]			<< pref.alternate_languages
 	S["extra_languages"]	<< pref.extra_languages
 	if(islist(pref.alternate_languages))			// Because aparently it may not be?
+		/* Bastion of Endeavor Translation: Bastion of Endeavor TODO: Can't say I like having the english_list there but we shall see?
 		testing("LANGSANI: Loaded from [pref.client]'s character [pref.real_name || "-name not yet loaded-"] savefile: [english_list(pref.alternate_languages || list())]")
+		*/
+		testing("ЯЗЫКИ: Загружен персонаж игрока [pref.client] ([pref.real_name || "имя не прогружено"]): [english_list(pref.alternate_languages || list(), nothing_text = "языков нет")].")
+		// End of Bastion of Endeavor Translation
 	S["language_prefixes"]	<< pref.language_prefixes
 	S["language_custom_keys"]	<< pref.language_custom_keys
 
 /datum/category_item/player_setup_item/general/language/sanitize_character()
 	if(!islist(pref.alternate_languages))
+		/* Bastion of Endeavor Translation
 		testing("LANGSANI: Sanitizing languages on [pref.client]'s character [pref.real_name || "-name not yet loaded-"] because their character has no languages list")
+		*/
+		testing("ЯЗЫКИ: Выдаём лист персонажу игрока [pref.client] ([pref.real_name || "имя не прогружено"]), т.к. он отсутствовал.")
+		// End of Bastion of Endeavor Translation
 		pref.alternate_languages = list()
 	if(pref.species)
 		var/datum/species/S = GLOB.all_species[pref.species]
 		if(!istype(S))
+			/* Bastion of Endeavor Translation
 			testing("LANGSANI: Failed sani on [pref.client]'s character [pref.real_name || "-name not yet loaded-"] because their species ([pref.species]) isn't in the global list")
+			*/
+			testing("ЯЗЫКИ: Не удалась проверка персонажа игрока [pref.client] ([pref.real_name || "имя не прогружено"]), так как раса [pref.species] не находится в глобальном листе.")
+			// End of Bastion of Endeavor Translation
 			return
 
 		if(pref.alternate_languages.len > (S.num_alternate_languages + pref.extra_languages))
+			/* Bastion of Endeavor Translation
 			testing("LANGSANI: Truncated [pref.client]'s character [pref.real_name || "-name not yet loaded-"] language list because it was too long (len: [pref.alternate_languages.len], allowed: [S.num_alternate_languages])")
+			*/
+			testing("ЯЗЫКИ: Обрезаем лист языков персонажа игрока [pref.client] ([pref.real_name || "имя не прогружено"]) из-за чрезмерной длины (было: [pref.alternate_languages.len], макс.: [S.num_alternate_languages])")
+			// End of Bastion of Endeavor Translation
 			pref.alternate_languages.len = (S.num_alternate_languages + pref.extra_languages) // Truncate to allowed length
 
 		// Sanitize illegal languages
 		for(var/language in pref.alternate_languages)
 			var/datum/language/L = GLOB.all_languages[language]
 			if(!istype(L) || (L.flags & RESTRICTED) || (!(language in S.secondary_langs) && pref.client && !is_lang_whitelisted(pref.client, L)))
+				/* Bastion of Endeavor Translation
 				testing("LANGSANI: Removed [L?.name || "lang not found"] from [pref.client]'s character [pref.real_name || "-name not yet loaded-"] because it failed allowed checks")
+				*/
+				testing("ЯЗЫКИ: Удалён [L?.name || "неизвестный язык"] из персонажа игока [pref.client] ([pref.real_name || "имя не прогружено"]) в связи с провалом проверки.")
+				// End of Bastion of Endeavor Translation
 				pref.alternate_languages -= language
 
 	if(isnull(pref.language_prefixes) || !pref.language_prefixes.len)
@@ -58,28 +82,61 @@
 			pref.language_custom_keys.Remove(key)
 
 /datum/category_item/player_setup_item/general/language/content()
+	/* Bastion of Endeavor Translation
 	. += "<b>Languages</b><br>"
+	*/
+	. += "<b>Языки</b><br>"
+	// End of Bastion of Endeavor Translation
 	var/datum/species/S = GLOB.all_species[pref.species]
 	if(pref.alternate_languages.len > (S.num_alternate_languages + pref.extra_languages))
+		/* Bastion of Endeavor Translation
 		testing("LANGSANI: Truncated [pref.client]'s character [pref.real_name || "-name not yet loaded-"] language list because it was too long (len: [pref.alternate_languages.len], allowed: [S.num_alternate_languages])")
+		*/
+		testing("ЯЗЫКИ: Обрезаем лист языков персонажа игрока [pref.client] ([pref.real_name || "имя не прогружено"]) из-за чрезмерной длины (было: [pref.alternate_languages.len], макс.: [S.num_alternate_languages]).")
+		// End of Bastion of Endeavor Translation
 		pref.alternate_languages.len = (S.num_alternate_languages + pref.extra_languages) // Truncate to allowed length
 	if(S.language)
+		/* Bastion of Endeavor Translation
 		. += "- [S.language] - <a href='?src=\ref[src];set_custom_key=[S.language]'>Set Custom Key</a><br>"
+		*/
+		. += "- [S.language] - <a href='?src=\ref[src];set_custom_key=[S.language]'>Назначить клавишу</a><br>"
+		// End of Bastion of Endeavor Translation
 	if(S.default_language && S.default_language != S.language)
+		/* Bastion of Endeavor Translation
 		. += "- [S.default_language] - <a href='?src=\ref[src];set_custom_key=[S.default_language]'>Set Custom Key</a><br>"
+		*/
+		. += "- [S.default_language] - <a href='?src=\ref[src];set_custom_key=[S.default_language]'>Назначить клавишу</a><br>"
+		// End of Bastion of Endeavor Translation
 	if(S.num_alternate_languages + pref.extra_languages)
 		if(pref.alternate_languages.len)
 			for(var/i = 1 to pref.alternate_languages.len)
 				var/lang = pref.alternate_languages[i]
+				/* Bastion of Endeavor Translation
 				. += "- [lang] - <a href='?src=\ref[src];remove_language=[i]'>remove</a> - <a href='?src=\ref[src];set_custom_key=[lang]'>Set Custom Key</a><br>"
+				*/
+				. += "- [lang] - <a href='?src=\ref[src];remove_language=[i]'>Удалить</a> - <a href='?src=\ref[src];set_custom_key=[lang]'>Назначить клавишу</a><br>"
+				// End of Bastion of Endeavor Translation
 
 		if(pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
+			/* Bastion of Endeavor Translation
 			. += "- <a href='?src=\ref[src];add_language=1'>add</a> ([(S.num_alternate_languages + pref.extra_languages) - pref.alternate_languages.len] remaining)<br>"
+			*/
+			. += "- <a href='?src=\ref[src];add_language=1'>Добавить</a> (осталось ещё [(S.num_alternate_languages + pref.extra_languages) - pref.alternate_languages.len])<br>"
+			// End of Bastion of Endeavor Translation
 	else
+		/* Bastion of Endeavor Translation
 		. += "- [pref.species] cannot choose secondary languages.<br>"
+		*/
+		. += "- Вы не можете владеть вторым языком.<br>"
+		// End of Bastion of Endeavor Translation
 
+	/* Bastion of Endeavor Translation
 	. += "<b>Language Keys</b><br>"
 	. += " [jointext(pref.language_prefixes, " ")] <a href='?src=\ref[src];change_prefix=1'>Change</a> <a href='?src=\ref[src];reset_prefix=1'>Reset</a><br>"
+	*/
+	. += "<b>Клавиши языков</b><br>"
+	. += " [jointext(pref.language_prefixes, " ")] <a href='?src=\ref[src];change_prefix=1'>Изменить</a> <a href='?src=\ref[src];reset_prefix=1'>Сбросить</a><br>"
+	// End of Bastion of Endeavor Translation
 
 /datum/category_item/player_setup_item/general/language/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["remove_language"])
@@ -89,7 +146,11 @@
 	else if(href_list["add_language"])
 		var/datum/species/S = GLOB.all_species[pref.species]
 		if(pref.alternate_languages.len >= (S.num_alternate_languages + pref.extra_languages))
+			/* Bastion of Endeavor Translation
 			tgui_alert_async(user, "You have already selected the maximum number of alternate languages for this species!")
+			*/
+			tgui_alert_async(user, "У Вас уже максимум дополнительных языков!")
+			// End of Bastion of Endeavor Translation
 		else
 			var/list/available_languages = S.secondary_langs.Copy()
 			for(var/L in GLOB.all_languages)
@@ -103,14 +164,27 @@
 			available_languages -= pref.alternate_languages
 
 			if(!available_languages.len)
+				/* Bastion of Endeavor Translation
 				tgui_alert_async(user, "There are no additional languages available to select.")
+				*/
+				tgui_alert_async(user, "Больше не осталось доступных для выбора языков.")
+				// End of Bastion of Endeavor Translation
 			else
+				/* Bastion of Endeavor Translation
 				var/new_lang = tgui_input_list(user, "Select an additional language", "Character Generation", available_languages)
+				*/
+				var/new_lang = tgui_input_list(user, "Выберите дополнительный язык:", "Дополнительные языки", available_languages)
+				// End of Bastion of Endeavor Translation
 				if(new_lang && pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
 					var/datum/language/chosen_lang = GLOB.all_languages[new_lang]
 					if(istype(chosen_lang))
+						/* Bastion of Endeavor Translation
 						var/choice = tgui_alert(usr, "[chosen_lang.desc]",chosen_lang.name, list("Take","Cancel"))
 						if(choice != "Cancel" && pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
+						*/
+						var/choice = tgui_alert(usr, "[chosen_lang.desc]",chosen_lang.name, list("Взять","Отмена"))
+						if(choice != "Отмена" && pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
+						// End of Bastion of Endeavor Translation
 							pref.alternate_languages |= new_lang
 					return TOPIC_REFRESH
 
@@ -118,16 +192,37 @@
 		var/char
 		var/keys[0]
 		do
+			/* Bastion of Endeavor Translation
 			char = tgui_input_text(usr, "Enter a single special character.\nYou may re-select the same characters.\nThe following characters are already in use by radio: ; : .\nThe following characters are already in use by special say commands: ! * ^", "Enter Character - [3 - keys.len] remaining")
+			*/
+			char = tgui_input_text(usr, "Введите один особый символ. Можно использовать один символ несколько раз. Символы, уже используемые для рации: ; : . Символы, уже используемые для глагола Сказать: ! * ^", "Клавиша языка - осталось ещё [3 - keys.len]")
+			// End of Bastion of Endeavor Translation
 			if(char)
+				/* Bastion of Endeavor Translation
 				if(length(char) > 1)
 					tgui_alert_async(user, "Only single characters allowed.", "Error")
+				*/
+				if(length_char(char) > 1)
+					tgui_alert_async(user, "Разрешён только один символ.", "Ошибка")
+				// End of Bastion of Endeavor Translation
 				else if(char in list(";", ":", "."))
+					/* Bastion of Endeavor Translation
 					tgui_alert_async(user, "Radio character. Rejected.", "Error")
+					*/
+					tgui_alert_async(user, "Символ уже используется для рации.", "Ошибка")
+					// End of Bastion of Endeavor Translation
 				else if(char in list("!","*","^","-"))
+					/* Bastion of Endeavor Translation
 					tgui_alert_async(user, "Say character. Rejected.", "Error")
+					*/
+					tgui_alert_async(user, "Символ уже используется для глагола Сказать.", "Ошибка")
+					// End of Bastion of Endeavor Translation
 				else if(contains_az09(char))
+					/* Bastion of Endeavor Translation
 					tgui_alert_async(user, "Non-special character. Rejected.", "Error")
+					*/
+					tgui_alert_async(user, "Нельзя использовать буквы алфавита.", "Ошибка")
+					// End of Bastion of Endeavor Translation
 				else
 					keys.Add(char)
 		while(char && keys.len < 3)
@@ -150,8 +245,13 @@
 				oldkey = key
 				break
 
+		/* Bastion of Endeavor Translation
 		var/char = tgui_input_text(user, "Input a language key for [lang]. Input a single space to reset.", "Language Custom Key", oldkey)
 		if(length(char) != 1)
+		*/
+		var/char = tgui_input_text(user, "Введите клавишу для языка или пробел для сброса.", "[lang]", oldkey)
+		if(length_char(char) != 1)
+		// End of Bastion of Endeavor Translation
 			return TOPIC_REFRESH
 		else if(char == " ")
 			for(var/key in pref.language_custom_keys)
@@ -163,7 +263,11 @@
 				pref.language_custom_keys += char
 			pref.language_custom_keys[char] = lang
 		else
+			/* Bastion of Endeavor Translation
 			tgui_alert_async(user, "Improper language key. Rejected.", "Error")
+			*/
+			tgui_alert_async(user, "Недопустимая клавиша языка.", "Ошибка")
+			// End of Bastion of Endeavor Translation
 
 		return TOPIC_REFRESH
 

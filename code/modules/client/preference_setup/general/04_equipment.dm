@@ -76,9 +76,17 @@
 
 /datum/category_item/player_setup_item/general/equipment/content()
 	. = list()
+	/* Bastion of Endeavor Translation
 	. += "<b>Equipment:</b><br>"
+	*/
+	. += "<b>Вещи:</b><br>"
+	// End of Bastion of Endeavor Translation
 	for(var/datum/category_group/underwear/UWC in global_underwear.categories)
+		/* Bastion of Endeavor Translation
 		var/item_name = pref.all_underwear[UWC.name] ? pref.all_underwear[UWC.name] : "None"
+		*/
+		var/item_name = pref.all_underwear[UWC.name] ? pref.all_underwear[UWC.name] : "Нет"
+		// End of Bastion of Endeavor Translation
 		. += "[UWC.name]: <a href='?src=\ref[src];change_underwear=[UWC.name]'><b>[item_name]</b></a>"
 		var/datum/category_item/underwear/UWI = UWC.items_by_name[item_name]
 		if(UWI)
@@ -86,9 +94,15 @@
 				. += " <a href='?src=\ref[src];underwear=[UWC.name];tweak=\ref[gt]'>[gt.get_contents(get_metadata(UWC.name, gt))]</a>"
 
 		. += "<br>"
+	/* Bastion of Endeavor Translation
 	. += "Backpack Type: <a href='?src=\ref[src];change_backpack=1'><b>[backbaglist[pref.backbag]]</b></a><br>"
 	. += "PDA Type: <a href='?src=\ref[src];change_pda=1'><b>[pdachoicelist[pref.pdachoice]]</b></a><br>"
 	. += "Communicator Visibility: <a href='?src=\ref[src];toggle_comm_visibility=1'><b>[(pref.communicator_visibility) ? "Yes" : "No"]</b></a><br>"
+	*/
+	. += "Вид сумки: <a href='?src=\ref[src];change_backpack=1'><b>[backbaglist[pref.backbag]]</b></a><br>"
+	. += "Модель КПК: <a href='?src=\ref[src];change_pda=1'><b>[pdachoicelist[pref.pdachoice]]</b></a><br>"
+	. += "Отображаться в коммуникаторах: <a href='?src=\ref[src];toggle_comm_visibility=1'><b>[(pref.communicator_visibility) ? "Да" : "Нет"]</b></a><br>"
+	// End of Bastion of Endeavor Translation
 
 	return jointext(.,null)
 
@@ -111,13 +125,21 @@
 
 /datum/category_item/player_setup_item/general/equipment/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["change_backpack"])
+		/* Bastion of Endeavor Translation
 		var/new_backbag = tgui_input_list(user, "Choose your character's style of bag:", "Character Preference", backbaglist, backbaglist[pref.backbag])
+		*/
+		var/new_backbag = tgui_input_list(user, "Выберите внешний вид своей сумки:", "Вид сумки", backbaglist, backbaglist[pref.backbag])
+		// End of Bastion of Endeavor Translation
 		if(!isnull(new_backbag) && CanUseTopic(user))
 			pref.backbag = backbaglist.Find(new_backbag)
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["change_pda"])
+		/* Bastion of Endeavor Translation
 		var/new_pdachoice = tgui_input_list(user, "Choose your character's style of PDA:", "Character Preference", pdachoicelist, pdachoicelist[pref.pdachoice])
+		*/
+		var/new_pdachoice = tgui_input_list(user, "Выберите модель своего КПК:", "Модель КПК", pdachoicelist, pdachoicelist[pref.pdachoice])
+		// End of Bastion of Endeavor Translation
 		if(!isnull(new_pdachoice) && CanUseTopic(user))
 			pref.pdachoice = pdachoicelist.Find(new_pdachoice)
 			return TOPIC_REFRESH
@@ -126,7 +148,11 @@
 		var/datum/category_group/underwear/UWC = global_underwear.categories_by_name[href_list["change_underwear"]]
 		if(!UWC)
 			return
+		/* Bastion of Endeavor Translation
 		var/datum/category_item/underwear/selected_underwear = tgui_input_list(user, "Choose underwear:", "Character Preference", UWC.items, pref.all_underwear[UWC.name])
+		*/
+		var/datum/category_item/underwear/selected_underwear = tgui_input_list(user, "Выберите вид нижнего белья:", "Нижнее белье", UWC.items, pref.all_underwear[UWC.name])
+		// End of Bastion of Endeavor Translation
 		if(selected_underwear && CanUseTopic(user))
 			pref.all_underwear[UWC.name] = selected_underwear.name
 		return TOPIC_REFRESH_UPDATE_PREVIEW

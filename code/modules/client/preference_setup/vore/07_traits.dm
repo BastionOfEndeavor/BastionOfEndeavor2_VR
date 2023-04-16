@@ -401,7 +401,7 @@
 	. += "<a href='?src=\ref[src];custom_exclaim=1'>Установить</a>"
 	. += "<a href='?src=\ref[src];reset_exclaim=1'>Сбросить</A>"
 	. += "</td></tr><tr>"
-	. += "<td><b>Сообщения о дискомфорте<b></td></tr><tr>"
+	. += "<td><b>Сообщения о дискомфорте</b></td></tr><tr>"
 	. += "<td><b>От жары: </b></td><td>"
 	. += "<a href='?src=\ref[src];custom_heat=1'>Установить</a>"
 	. += "<a href='?src=\ref[src];reset_heat=1'>Сбросить</A>"

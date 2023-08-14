@@ -103,7 +103,7 @@ var/list/preferences_datums = list()
 	*/
 	var/home_system = "Не указано"
 	var/birthplace = "Не указано"
-	var/citizenship = "Не указано"
+	var/citizenship = "Нет"
 	var/faction = "Нет"
 	var/religion = "Нет"
 	var/antag_faction = "Нет"
@@ -277,7 +277,7 @@ var/list/preferences_datums = list()
 		/* Bastion of Endeavor Translation
 		to_chat(user, "<span class='danger'>No mob exists for the given client!</span>")
 		*/
-		to_chat(user, "<span class='danger'>Для клиента не существует моб!</span>")
+		to_chat(user, "<span class='danger'>За данным клиентом не закреплен моб!</span>")
 		// End of Bastion of Endeavor Translation
 		return
 

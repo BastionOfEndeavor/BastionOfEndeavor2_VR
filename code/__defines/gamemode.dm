@@ -73,7 +73,7 @@ var/list/be_special_flags = list(
 	"Ship Survivor"	   = BE_SURVIVOR
 	//VOREStation Add End
 	*/
-	"Предвтель"      			    = BE_TRAITOR,
+	"Предатель"      			    = BE_TRAITOR,
 	"Оперативник"    			    = BE_OPERATIVE,
 	"Генокрад"       				= BE_CHANGELING,
 	"Волшебник"      			    = BE_WIZARD,

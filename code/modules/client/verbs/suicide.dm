@@ -23,7 +23,7 @@
 	to_chat(src, "<span class='warning'>No. Adminhelp if there is a legitimate reason, and please review our server rules.</span>")
 	message_admins("[ckey] has tried to trigger the suicide verb as human, but it is currently disabled.")
 	*/
-	to_chat(src, "<span class='warning'>Нет уж. Обратитесь в Помощь админа, если у Вас действительно есть на это причина, и перечитайте заодно правила.</span>")
+	to_chat(src, "<span class='warning'>Нет уж. Обратитесь в Помощь администратора, если у Вас действительно есть на это причина, и перечитайте заодно правила.</span>")
 	message_admins("[ckey] попытался использовать глагол Самоубийства будучи человеком. Этот глагол отключён.")
 	// End of Bastion of Endeavor Translation
 

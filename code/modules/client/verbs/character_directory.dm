@@ -235,7 +235,7 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 		/* Bastion of Endeavor Translation
 		to_chat(user, "<span class='warning'>You seem to have lost either your mind, or your current preferences, while changing the values.[action == "editAd" ? " Here is your ad that you wrote. [new_value]" : null]</span>")
 		*/
-		to_chat(user, "<span class='warning'>Ошибка: пока Вы изменяли предпочтения, затерялась запись о Ваших настройках или разума песонажа.[action == "editAd" ? " Вот, что Вы написали. [new_value]" : null]</span>")
+		to_chat(user, "<span class='warning'>Ошибка: пока Вы изменяли предпочтения, затерялась запись о Ваших настройках или разума персонажа.[action == "editAd" ? " Вот, что Вы написали. [new_value]" : null]</span>")
 		// End of Bastion of Endeavor Translation
 		return
 	switch(action)

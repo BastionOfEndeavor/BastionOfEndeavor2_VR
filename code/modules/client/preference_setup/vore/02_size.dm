@@ -162,7 +162,7 @@
 			return TOPIC_REFRESH
 		*/
 		var/new_weight = tgui_input_number(user, "Выберите относительный вес Вашего персонажа.\n\
-			Это значение устанавливает, насколько выше или ниже вес Вашего персонажа относительно среднего при его росте.\n\
+			Это значение устанавливает, насколько больше или меньше вес Вашего персонажа относительно среднего при его росте.\n\
 			Оставьте значение по умолчанию, если Ваш персонаж среднего телосложения для своего роста.\n\
 			([WEIGHT_MIN]-[WEIGHT_MAX])", "Относительный вес", null, WEIGHT_MAX, WEIGHT_MIN)
 		if(new_weight)
@@ -181,7 +181,7 @@
 		var/weight_gain_rate = tgui_input_number(user, "Укажите скорость обретения веса Вашим персонажем от 100% \
 			(нормальная скорость) до 0% (не набирает вес).\n\
 			(если хотите отключить обретение веса, 0.01 округляется до 0%.)\
-			([WEIGHT_CHANGE_MIN]-[WEIGHT_CHANGE_MAX])", "Character Preference", pref.weight_gain)
+			([WEIGHT_CHANGE_MIN]-[WEIGHT_CHANGE_MAX])", "Обретение веса", pref.weight_gain)
 		// End of Bastion of Endeavor Translation
 		if(weight_gain_rate)
 			pref.weight_gain = round(text2num(weight_gain_rate),1)

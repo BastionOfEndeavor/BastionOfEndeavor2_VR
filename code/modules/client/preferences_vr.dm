@@ -194,7 +194,7 @@
 	/* Bastion of Endeavor Translation
 	to_chat(src, "Mentorhelp pings are now [ is_preference_enabled(pref_path) ? "enabled" : "disabled"]")
 	*/
-	to_chat(src, "Вы [ is_preference_enabled(pref_path) ? "теперь" : "больше не"] будете слышать звуковое оповещение при сообщениях в Помощи ментора.")
+	to_chat(src, "Вы [ is_preference_enabled(pref_path) ? "теперь" : "больше не"] будете слышать звуковое оповещение при получении сообщений в Помощи ментора.")
 	// End of Bastion of Endeavor Translation
 
 	SScharacter_setup.queue_preferences_save(prefs)
@@ -219,7 +219,7 @@
 	/* Bastion of Endeavor Translation
 	to_chat(src, "You are [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] periodically receiving advice on gameplay and roleplay.")
 	*/
-	to_chat(src, "Вы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше"] не будете получать периодические советы об отыгрыше и игровых механиках.")
+	to_chat(src, "Вы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не"] будете получать периодические советы об отыгрыше и игровых механиках.")
 	// End of Bastion of Endeavor Translation
 
 	SScharacter_setup.queue_preferences_save(prefs)

@@ -77,7 +77,7 @@
 				/* Bastion of Endeavor Translation
 				testing("LANGSANI: Removed [L?.name || "lang not found"] from [pref.client]'s character [pref.real_name || "-name not yet loaded-"] because it failed allowed checks")
 				*/
-				testing("ЯЗЫКИ: Удалён [L?.name || "неизвестный язык"] из персонажа игока [pref.client] ([pref.real_name || "имя не прогружено"]) в связи с провалом проверки.")
+				testing("ЯЗЫКИ: Удалён [L?.name || "неизвестный язык"] из персонажа игрока [pref.client] ([pref.real_name || "имя не прогружено"]) в связи с провалом проверки.")
 				// End of Bastion of Endeavor Translation
 				pref.alternate_languages -= language
 
@@ -151,7 +151,7 @@
 	*/
 	. += "<b>Клавиши языков</b><br>"
 	. += " [jointext(pref.language_prefixes, " ")] <a href='?src=\ref[src];change_prefix=1'>Изменить</a> <a href='?src=\ref[src];reset_prefix=1'>Сбросить</a><br>"
-	. += "<b>Предпочтительный язык</b> <a href='?src=\ref[src];pref_lang=1'>[pref.preferred_language]</a><br>" // VOREStation Add
+	. += "<b>Предпочитаемый язык</b> <a href='?src=\ref[src];pref_lang=1'>[pref.preferred_language]</a><br>" // VOREStation Add
 	// End of Bastion of Endeavor Translation
 
 /datum/category_item/player_setup_item/general/language/OnTopic(var/href,var/list/href_list, var/mob/user)
@@ -265,7 +265,7 @@
 		var/char = tgui_input_text(user, "Input a language key for [lang]. Input a single space to reset.", "Language Custom Key", oldkey)
 		if(length(char) != 1)
 		*/
-		var/char = tgui_input_text(user, "Введите клавишу для языка или пробел для сброса.", "[lang]", oldkey)
+		var/char = tgui_input_text(user, "Введите клавишу для языка или пробел для сброса.", "[lang] — Клавиша языка", oldkey)
 		if(length_char(char) != 1)
 		// End of Bastion of Endeavor Translation
 			return TOPIC_REFRESH
@@ -297,7 +297,7 @@
 			if(!selection) // Set our preferred to default, just in case.
 				tgui_alert_async(user, "Preferred Language not modified.", "Selection Canceled")
 			*/
-			var/selection = tgui_input_list(user, "Выберите предпочтительный язык Вашего персонажа (по умолчанию - [S.language]):", "Предпочтительный язык", lang_opts, pref.preferred_language)
+			var/selection = tgui_input_list(user, "Выберите предпочитаемый язык Вашего персонажа (по умолчанию - [S.language]):", "Предпочтительный язык", lang_opts, pref.preferred_language)
 			// End of Bastion of Endeavor Translation
 			if(selection)
 				pref.preferred_language = selection

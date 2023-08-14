@@ -280,8 +280,8 @@
 		to_chat(src, "<h1 class='alert'>Custom Event</h1>")
 		to_chat(src, "<h2 class='alert'>A custom event is taking place. OOC Info:</h2>")
 		*/
-		to_chat(src, "<h1 class='alert'>Особый эвент</h1>")
-		to_chat(src, "<h2 class='alert'>На станции происходит особый эвент. Информация OOC:</h2>")
+		to_chat(src, "<h1 class='alert'>Особый ивент</h1>")
+		to_chat(src, "<h2 class='alert'>На станции происходит особый ивент. Информация OOC:</h2>")
 		// End of Bastion of Endeavor Translation
 		to_chat(src, "<span class='alert'>[custom_event_msg]</span>")
 		to_chat(src, "<br>")
@@ -290,7 +290,7 @@
 		/* Bastion of Endeavor Translation
 		to_chat(src, "<span class='warning'>Unable to access asset cache browser, if you are using a custom skin file, please allow DS to download the updated version, if you are not, then make a bug report. This is not a critical issue but can cause issues with resource downloading, as it is impossible to know when extra resources arrived to you.</span>")
 		*/
-		to_chat(src, "<span class='warning'>Не удалось подключиться к браузера кэша ассетов. Если Вы используете самодельный скин, то разрешите DreamSeeker загрузить новый, если нет — доложите администраторам. Это не критическая ошибка, но приводит к огромным проблемам с прогрузкой ресурсов.</span>")
+		to_chat(src, "<span class='warning'>Не удалось подключиться к браузеру кэша ассетов. Если Вы используете самодельный скин, то разрешите DreamSeeker загрузить новый, если нет — доложите администраторам. Это не критическая ошибка, но приводит к огромным проблемам с прогрузкой ресурсов.</span>")
 		// End of Bastion of Endeavor Translation
 
 	if(holder)
@@ -451,7 +451,7 @@
 			message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect during panic bunker</span>")
 			disconnect_with_message("Sorry but the server is currently not accepting connections from never before seen players.")
 			*/
-			log_adminwarn("Неудачный заход: [key] - новый аккаунт попытался подключиться в течение бункера.")
+			log_adminwarn("Неудачный заход: [key] - новый аккаунт попытался подключиться во время режима бункера.")
 			message_admins("<span class='adminnotice'>Неудачный заход: [key] - новый аккаунт попытался подключиться в течение бункера.</span>")
 			disconnect_with_message("Извините, но сервер на данный момент не впускает новых игроков.")
 			// End of Bastion of Endeavor Translation

@@ -150,7 +150,7 @@
 		/* Bastion of Endeavor Translation
 		var/choice = tgui_input_list(user, "Please select the faction or political entity with which you currently hold citizenship. Select \"Other\" to specify manually.", "Character Preference", citizenship_choices + list("None","Other"), pref.citizenship)
 		*/
-		var/choice = tgui_input_list(user, "Укажите фракцию или политическое объединение, которому принадлежит гражданство Вашего персонажа. Выберите \"Другое\", чтобы вписать вручную.", "Гражданство", citizenship_choices + list("Нет","Другое"), pref.citizenship)
+		var/choice = tgui_input_list(user, "Укажите фракцию или политическое объединение, к которому принадлежит гражданство Вашего персонажа. Выберите \"Другое\", чтобы вписать вручную.", "Гражданство", citizenship_choices + list("Нет","Другое"), pref.citizenship)
 		// End of Bastion of Endeavor Translation
 		if(!choice || !CanUseTopic(user))
 			return TOPIC_NOACTION

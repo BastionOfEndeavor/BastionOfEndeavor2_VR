@@ -126,7 +126,7 @@ var/global/list/latejoin_tram   = list()
 	display_name = "Tram Station"
 	msg = "will arrive to the station shortly by shuttle"
 	*/
-	display_name = "Травмвайный вокзал"
+	display_name = "Трамвайный вокзал"
 	msg = "прибыл;;а;о;и; на станцию на шаттле"
 	// End of Bastion of Endeavor Translation
 

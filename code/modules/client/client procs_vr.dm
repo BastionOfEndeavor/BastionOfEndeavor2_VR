@@ -40,7 +40,7 @@
 		/* Bastion of Endeavor Translation
 		log_and_message_admins("getipintel.net reports HTTP status 429. IP reputation checking is now disabled. If you see this, let a developer know.")
 		*/
-		log_and_message_admins("getipintel.net докладывает HTTP-статус 429. Проверка репутации IP теперь отключена. Сообщите об этом разработчику.")
+		log_and_message_admins("getipintel.net докладывает HTTP-статус 429. Проверка репутации IP отныне отключена. Сообщите об этом разработчику.")
 		// End of Bastion of Endeavor Translation
 		config.ip_reputation = FALSE
 		return -1
@@ -131,7 +131,7 @@
 		/* Bastion of Endeavor Translation
 		log_admin("IPQualityscore.com returned an error while processing [key] from [address]: " + response["message"])
 		*/
-		log_admin("IPQualityscore.com выдал ошибку при проверке [key] по адресу [address]: " + response["message"])
+		log_admin("ipqualityscore.com выдал ошибку при проверке [key] по адресу [address]: " + response["message"])
 		// End of Bastion of Endeavor Translation
 		return -1
 

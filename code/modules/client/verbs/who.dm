@@ -138,7 +138,7 @@
 				/* Bastion of Endeavor Translation
 				temp += " <i>(as [C.holder.fakekey])</i>"
 				*/
-				temp += " <i>(as [C.holder.fakekey])</i>"
+				temp += " <i>(под именем [C.holder.fakekey])</i>"
 				// End of Bastion of Endeavor Translation
 
 			/* Bastion of Endeavor Translation
@@ -248,7 +248,7 @@
 	/* Bastion of Endeavor Translation
 	msg += "\n<span class='info'>Adminhelps are also sent to Discord. If no admins are available in game try anyway and an admin on Discord may see it and respond.</span>"
 	*/
-	msg += "\n<span class='info'>Запросы в Помощь администратора дублируются в Discord. Если в сети нет администраторов, Вы можете все равно оставить запрос, и кто-то из администраторов может увидеть его в Discord и ответить.</span>"
+	msg += "\n<span class='info'>Запросы в Помощь администратора дублируются в Discord. Если в сети нет администраторов, Вы можете все равно оставить запрос, и кто-то из администраторов может увидеть его в Discord и ответить при первой же возможности.</span>"
 	// End of Bastion of Endeavor Translation
 
 	to_chat(src,"<span class='filter_notice'>[jointext(msg, "<br>")]</span>")

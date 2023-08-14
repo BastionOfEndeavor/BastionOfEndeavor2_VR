@@ -202,10 +202,10 @@
 			to_chat(src, "<span class='danger'>Чат LOOC отключён администраторами.</span>")
 			return
 		if(!config.dooc_allowed && (mob.stat == DEAD))
-			to_chat(usr, "<span class='danger'>Чат OOC отключён для мёртвых мобов.</span>")
+			to_chat(usr, "<span class='danger'>Чат LOOC отключён для мёртвых мобов.</span>")
 			return
 		if(prefs.muted & MUTE_OOC)
-			to_chat(src, "<span class='danger'>Вам запрещено использовать чат OOC.</span>")
+			to_chat(src, "<span class='danger'>Вам запрещено использовать чаты OOC.</span>")
 			return
 		if(findtext_char(msg, "byond://") && !config.allow_byond_links)
 			to_chat(src, "<B>Рекламировать другие сервера запрещено.</B>")

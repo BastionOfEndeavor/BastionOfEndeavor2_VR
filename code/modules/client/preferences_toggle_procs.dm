@@ -132,7 +132,7 @@
 	*/
 	set name = "Отображение чата LOOC"
 	set category = "Предпочтения"
-	set desc = "Переключает отбражение локального чата LOOC."
+	set desc = "Переключает отображение локального чата LOOC."
 	// End of Bastion of Endeavor Translation
 
 	var/pref_path = /datum/client_preference/show_looc
@@ -157,7 +157,7 @@
 	*/
 	set name = "Точное размещение"
 	set category = "Предпочтения"
-	set desc = "Переключает размещение Вами предметов на столе под курсором или точно в центр."
+	set desc = "Переключает размещение Вами предметов на столе между положением под курсором и точным центром стола."
 	// End of Bastion of Endeavor Translation
 
 	var/pref_path = /datum/client_preference/precision_placement
@@ -167,7 +167,7 @@
 	/* Bastion of Endeavor Translation
 	to_chat(src,"You will [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] place items where your cursor is on the table.")
 	*/
-	to_chat(src,"Вы [ (is_preference_enabled(pref_path)) ? "теперь будете размещать предметы на столах точно под свой курсор" : "теперь будете размещать предметы на столах ровно по центру"].")
+	to_chat(src,"Вы [ (is_preference_enabled(pref_path)) ? "теперь будете размещать предметы на столах точно под своим курсором" : "теперь будете размещать предметы на столах ровно по центру"].")
 	// End of Bastion of Endeavor Translation
 
 	SScharacter_setup.queue_preferences_save(prefs)
@@ -382,7 +382,7 @@
 	*/
 	set name = "Кандидатура на особые роли"
 	set category = "Предпочтения"
-	set desc = "Позволяет выбрать, на какие особые роли выставить Вашу кандидатуру во время эвентов."
+	set desc = "Позволяет выбрать, на какие особые роли выставить Вашу кандидатуру во время ивентов."
 	// End of Bastion of Endeavor Translation
 
 	var/role_flag = be_special_flags[role]
@@ -467,7 +467,7 @@
 	/* Bastion of Endeavor Translation
 	to_chat(src, "You will [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] hear per-department door sounds.")
 	*/
-	to_chat(src, "Вы теперь будете слышать [ (is_preference_enabled(pref_path)) ? "одинаковые звуки шлюзов вне" : "разные звуки шлюзов"] зависимости от отдела, в котором они расположены.")
+	to_chat(src, "Вы теперь будете слышать [ (is_preference_enabled(pref_path)) ? "одинаковые звуки шлюзов вне" : "разные звуки шлюзов в"] зависимости от отдела, в котором они расположены.")
 	// End of Bastion of Endeavor Translation
 
 	SScharacter_setup.queue_preferences_save(prefs)
@@ -507,7 +507,7 @@
 	*/
 	set name = "Звуки при броске предметов"
 	set category = "Предпочтения"
-	set desc = "Переключает звуки при метании и опускании предмета."
+	set desc = "Переключает звуки при метании и бросании предмета."
 	// End of Bastion of Endeavor Translation
 
 	var/pref_path = /datum/client_preference/drop_sounds
@@ -517,7 +517,7 @@
 	/* Bastion of Endeavor Translation
 	to_chat(src, "You will [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] hear sounds when items are dropped or thrown.")
 	*/
-	to_chat(src, "Предметы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не"] будут издавать звуки при опускании или метании.")
+	to_chat(src, "Предметы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не"] будут издавать звуки при бросании или метании.")
 	// End of Bastion of Endeavor Translation
 
 	SScharacter_setup.queue_preferences_save(prefs)
@@ -873,7 +873,7 @@
 		/* Bastion of Endeavor Translation
 		to_chat(src,"You will [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] receive debug logs.")
 		*/
-		to_chat(src,"Вы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не будете"] видеть сообщения лога дебаггинга в чате.")
+		to_chat(src,"Вы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не"] будете видеть сообщения лога отладки в чате.")
 		// End of Bastion of Endeavor Translation
 		SScharacter_setup.queue_preferences_save(prefs)
 
@@ -898,7 +898,7 @@
 		/* Bastion of Endeavor Translation
 		to_chat(src,"You will [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] receive attack logs.")
 		*/
-		to_chat(src,"Вы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не будете"] видеть сообщения лога атак.")
+		to_chat(src,"Вы [ (is_preference_enabled(pref_path)) ? "теперь" : "больше не"] будете видеть сообщения лога атак.")
 		// End of Bastion of Endeavor Translation
 		SScharacter_setup.queue_preferences_save(prefs)
 

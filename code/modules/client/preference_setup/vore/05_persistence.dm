@@ -37,7 +37,7 @@
 	/* Bastion of Endeavor Translation
 	. += "<tr><td title=\"Set spawn location based on where you cryo'd out.\">Save Spawn Location: </td>"
 	*/
-	. += "<tr><td title=\"Запоминать точку появления с прошлого ухода.\">Сохранить точку появления: </td>"
+	. += "<tr><td title=\"Сохранять точку появления с прошлого ухода.\">Сохранить точку появления: </td>"
 	// End of Bastion of Endeavor Translation
 	. += make_yesno(PERSIST_SPAWN)
 	. += "</tr>"
@@ -53,7 +53,7 @@
 	/* Bastion of Endeavor Translation
 	. += "<tr><td title=\"Update organ preferences (normal/amputated/robotic/etc) and model (for robotic) based on what you have at round end.\">Save Organs: </td>"
 	*/
-	. += "<tr><td title=\"Запоминать состояние конечностей (нормальное/ампутированное/протез) и модель (если применимо).\">Сохранять конечности: </td>"
+	. += "<tr><td title=\"Сохранять состояние конечностей (нормальное/ампутированное/протез) и модель (если применимо).\">Сохранять конечности: </td>"
 	// End of Bastion of Endeavor Translation
 	. += make_yesno(PERSIST_ORGANS)
 	. += "</tr>"

@@ -186,7 +186,7 @@ var/list/_client_preferences_by_type
 	*/
 	description ="Гул суперматерии"
 	key = "SOUND_SUPERMATTER"
-	enabled_description = "Включён"
+	enabled_description = "Включен"
 	disabled_description = "Отключен"
 	// End of Bastion of Endeavor Translation
 
@@ -366,7 +366,7 @@ var/list/_client_preferences_by_type
 	*/
 	description ="Индикатор набора текста"
 	key = "SHOW_TYPING"
-	enabled_description = "Включён"
+	enabled_description = "Включен"
 	disabled_description = "Отключен"
 	// End of Bastion of Endeavor Translation
 
@@ -448,8 +448,8 @@ var/list/_client_preferences_by_type
 	*/
 	description = "Режим огнестрельного оружия"
 	key = "SAFE_FIRING"
-	enabled_description = "Безопасный"
-	disabled_description = "Опасный"
+	enabled_description = "С предохранителем"
+	disabled_description = "Без предохранителя"
 	// End of Bastion of Endeavor Translation
 
 /datum/client_preference/browser_style
@@ -461,7 +461,7 @@ var/list/_client_preferences_by_type
 	*/
 	description = "CSS для окон браузера"
 	key = "BROWSER_STYLED"
-	enabled_description = "Включён"
+	enabled_description = "Включен"
 	disabled_description = "Отключен"
 	// End of Bastion of Endeavor Translation
 

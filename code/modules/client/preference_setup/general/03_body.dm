@@ -822,7 +822,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 	. += "</table>"
 	. += "<br>"
-	. += "<b>Особенности поверх синтетических частей:</b> <a href='?src=\ref[src];synth_markings=1'><b>[pref.synth_markings ? "Да" : "Нет"]</b></a><br>"
+	. += "<b>Особенности тела поверх синтетических частей:</b> <a href='?src=\ref[src];synth_markings=1'><b>[pref.synth_markings ? "Да" : "Нет"]</b></a><br>"
 	. += "<b>Цвет поверх синтетических частей:</b> <a href='?src=\ref[src];synth_color=1'><b>[pref.synth_color ? "Да" : "Нет"]</b></a><br>"
 	if(pref.synth_color)
 		. += "<a href='?src=\ref[src];synth2_color=1'>Выбрать цвет</a> [color_square(pref.r_synth, pref.g_synth, pref.b_synth)]"
@@ -1546,7 +1546,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		/* Bastion of Endeavor Translation
 		var/new_ear_style = tgui_input_list(user, "Select an ear style for this character:", "Character Preference", pref.get_available_styles(global.ear_styles_list), pref.ear_style)
 		*/
-		var/new_ear_style = tgui_input_list(user, "Выберите уши Вашего персонажа:", "Выбор ушей", pref.get_available_styles(global.ear_styles_list), pref.ear_style)
+		var/new_ear_style = tgui_input_list(user, "Выберите вид ушей Вашего персонажа:", "Вид ушей", pref.get_available_styles(global.ear_styles_list), pref.ear_style)
 		// End of Bastion of Endeavor Translation
 		if(new_ear_style)
 			pref.ear_style = new_ear_style
@@ -1596,7 +1596,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		/* Bastion of Endeavor Translation
 		var/new_tail_style = tgui_input_list(user, "Select a tail style for this character:", "Character Preference", pref.get_available_styles(global.tail_styles_list), pref.tail_style)
 		*/
-		var/new_tail_style = tgui_input_list(user, "Выберите хвост Вашего персонажа:", "Выбор хвоста", pref.get_available_styles(global.tail_styles_list), pref.tail_style)
+		var/new_tail_style = tgui_input_list(user, "Выберите вид хвоста Вашего персонажа:", "Вид хвоста", pref.get_available_styles(global.tail_styles_list), pref.tail_style)
 		// End of Bastion of Endeavor Translation
 		if(new_tail_style)
 			pref.tail_style = new_tail_style
@@ -1645,7 +1645,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		/* Bastion of Endeavor Translation
 		var/new_wing_style = tgui_input_list(user, "Select a wing style for this character:", "Character Preference", pref.get_available_styles(global.wing_styles_list), pref.wing_style)
 		*/
-		var/new_wing_style = tgui_input_list(user, "Выберите вид крыльев Вашего персонажа:", "Выбор крыльев", pref.get_available_styles(global.wing_styles_list), pref.wing_style)
+		var/new_wing_style = tgui_input_list(user, "Выберите вид крыльев Вашего персонажа:", "Вид крыльев", pref.get_available_styles(global.wing_styles_list), pref.wing_style)
 		// End of Bastion of Endeavor Translation
 		if(new_wing_style)
 			pref.wing_style = new_wing_style
@@ -1728,7 +1728,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		/* Bastion of Endeavor Removal: We have a dedicated wiki button and this one just opens a page in the same browser window it's in, unnecessary and clunky
 		dat += "<td width = 400>[current_species.blurb]<br><br>See <a href=[current_species.wikilink]>the wiki</a> for more details.</td>"
 		*/
-		// End of Bastion of Endeavor Translation
+		// End of Bastion of Endeavor Removal
 	else
 		dat += "<td width = 400>[current_species.blurb]</td>"
 	//vorestation edit end
@@ -1800,7 +1800,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	if(current_species.flags & NO_PAIN)
 		dat += "</br><b>Не чувствуют боли.</b>"
 	if(current_species.flags & NO_SLIP)
-		dat += "</br><b>Обладают крепким сцеплением.</b>"
+		dat += "</br><b>Обладают хорошим сцеплением.</b>"
 	if(current_species.flags & NO_POISON)
 		dat += "</br><b>Обладают иммунитетом от ядов.</b>"
 	if(current_species.appearance_flags & HAS_SKIN_TONE)
@@ -1828,7 +1828,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 			/* Bastion of Endeavor Translation
 			dat += "<font color='red'><b>You cannot play as this species.</br><small>If you wish to be whitelisted, you can make an application post on <a href='?src=\ref[user];preference=open_whitelist_forum'>the forums</a>.</small></b></font></br>"
 			*/
-			dat += "<font color='red'><b>Вам недоступна эта раса.</br><small>Чтобы выбрать эту расу, необходимо подать особую заявку в Дискорде и дождаться её принятия.</small></b></font></br>"
+			dat += "<font color='red'><b>Вам недоступна эта раса.</br><small>Чтобы выбрать эту расу, необходимо подать особую заявку в Discord и дождаться её принятия.</small></b></font></br>"
 			// End of Bastion of Endeavor Translation
 		else if(restricted == 2)
 			/* Bastion of Endeavor Translation

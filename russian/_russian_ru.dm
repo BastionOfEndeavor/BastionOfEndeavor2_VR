@@ -122,7 +122,7 @@ var/global/list/consonants_ru = list("б", "в", "г", "д", "ж", "з", "й", "
 			return "[is_capital? "[capitalize(preposition)]" : "[preposition]"]"
 
 // Basically a better prep_ru
-/proc/prep_adv_ru(var/preposition = "", atom/input, var/case = GCASE)
+/proc/prep_adv_ru(var/preposition = "", atom/input, var/case = PCASE)
 	return "[prep_ru(input, preposition)] [case_ru(input, case)]"
 
 // This is a simple proc that adds an apropriate ending to a verb depending on the user's gender. This is core.
@@ -180,12 +180,16 @@ var/global/list/consonants_ru = list("б", "в", "г", "д", "ж", "з", "й", "
 	else return "на [pcase_ru(input)]"
 
 // Basically a quick mechanical interaction message constructor for a multitude of usages. Also helps eliminate human errors in localization.
-/proc/interact_ru(atom/user, var/use_verb, atom/target, var/case_target = ACASE, var/case_user = NCASE, var/secondary=null, var/force_mode="normal")
-	if(target) return "[cap_ru(user, case_user)] [verb_ru(user, use_verb)] [case_ru(target, case_target, user, secondary, force_mode)]"
-	else return "[cap_ru(user, case_user)] [verb_ru(user, use_verb)]"
+/proc/interact_ru(atom/user, var/use_verb, atom/target, var/capital = TRUE, var/case_target = ACASE, var/case_user = NCASE, var/secondary=null, var/force_mode="normal")
+	if(target) return "[capital? cap_ru(user, case_user) : case_ru(user, case_user)] [verb_ru(user, use_verb)] [case_ru(target, case_target, user, secondary, force_mode)]"
+	else return "[capital? cap_ru(user, case_user) : case_ru(user, case_user)] [verb_ru(user, use_verb)]"
 
 // An alias for verb_ru + case_ru; despite the naming, verb_ru is good for adjectives/pronouns too
 // Logically concat_ru is incompatible with self_check in cases_ru and is therefore omitted in this proc to avoid runtiming
 /proc/concat_ru(var/word, atom/object, var/case = NCASE, var/capital = FALSE, var/secondary=null, var/force_mode="normal")
 	if(capital) return "[capitalize(verb_ru(object, word))] [case_ru(object, null, case, secondary, force_mode)]"
 	else return "[verb_ru(object, word)] [case_ru(object, case, null, secondary, force_mode)]"
+
+/proc/reverse_concat_ru(var/word, atom/object, var/case = NCASE, var/capital = FALSE, var/secondary=null, var/force_mode="normal")
+	if(capital) return "[capitalize(case_ru(object, null, case, secondary, force_mode))] [verb_ru(object, word)]"
+	else return "[case_ru(object, case, null, secondary, force_mode)] [verb_ru(object, word)]"

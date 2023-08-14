@@ -8,14 +8,14 @@ var/obj/screen/robot_inventory
 	if(HUD.ui_style == 'icons/mob/screen/minimalist.dmi')
 		HUD.ui_style = 'icons/mob/screen1_robot_minimalist.dmi'
 	*/
-	if(HUD.ui_style == 'russian/icons/minimalist_ru.dmi')
-		HUD.ui_style = 'russian/icons/screen1_robot_minimalist_ru.dmi'
+	if(HUD.ui_style == 'russian/icons/mob/screen/minimalist_ru.dmi')
+		HUD.ui_style = 'russian/icons/mob/screen1_robot_minimalist_ru.dmi'
 	// End of Bastion of Endeavor Edit
 	else
 		/* Bastion of Endeavor Edit: 
 		HUD.ui_style = 'icons/mob/screen1_robot.dmi'
 		*/
-		HUD.ui_style = 'russian/icons/screen1_robot_ru.dmi'
+		HUD.ui_style = 'russian/icons/mob/screen1_robot_ru.dmi'
 		// End of Bastion of Endeavor Edit
 
 	var/list/adding = list()

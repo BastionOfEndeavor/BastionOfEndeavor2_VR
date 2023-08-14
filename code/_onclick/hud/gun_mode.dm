@@ -7,7 +7,7 @@
 	/* Bastion of Endeavor Edit: Russian icons. Not sure if used.
 	icon = 'icons/mob/screen1.dmi'
 	*/
-	icon = 'russian/icons/screen1_ru.dmi'
+	icon = 'russian/icons/mob/screen1_ru.dmi'
 	// End of Bastion of Endeavor Edit
 	master = null
 	dir = 2

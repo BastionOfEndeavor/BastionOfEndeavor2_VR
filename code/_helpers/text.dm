@@ -134,7 +134,7 @@
 			/* Bastion of Endeavor Edit: Adds russian letters too.
 			if(65 to 90)			//Uppercase Letters
 			*/
-			if(65 to 90, 1025, 1040 to 1071) //Uppercase + cyrillics
+			if(65 to 90, 1025, 1040 to 1071, 1105) //Uppercase + cyrillics
 			// End of Bastion of Endeavor Edit
 				output += ascii2text(ascii_char)
 				number_of_alphanumeric++
@@ -565,10 +565,10 @@
 			if(48 to 57)			//Numbers
 				return 1
 			// Bastion of Endeavor Addition: Might come in handy later.
-			if(1040 to 1071)		//Uppercase Russian Letters
+			if(1040 to 1071, 1025)		//Uppercase Russian Letters
 				return 1
 
-			if(1072 to 1103)		//Lowercase Russian Letters
+			if(1072 to 1103, 1105)		//Lowercase Russian Letters
 				return 1
 			// End of Bastion of Endeavor Addition
 	return 0
